@@ -287,6 +287,90 @@
       "date": "2026-10-30",
       "slot": "morning",
       "sector": "travel"
+    },
+    "149fb1f2b9a6973b": {
+      "title": "China expands foreign business access at world's largest free trade port",
+      "source": "Gov.cn English",
+      "date": "2026-10-30",
+      "slot": "evening",
+      "sector": "english"
+    },
+    "313b2abdbdd29072": {
+      "title": "China issues 800 bln yuan via financial instruments to expand investment",
+      "source": "Gov.cn English",
+      "date": "2026-10-30",
+      "slot": "evening",
+      "sector": "english"
+    },
+    "27f40f458facdf07": {
+      "title": "CPC plenum concludes, adopting resolution on persevering with full, rigorous Party self-governance",
+      "source": "Gov.cn English",
+      "date": "2026-10-30",
+      "slot": "evening",
+      "sector": "english"
+    },
+    "ea1929eb1670e3ea": {
+      "title": "中国人民银行行长潘功胜在2026金融街论坛年会上的主题演讲",
+      "source": "中国人民银行",
+      "date": "2026-10-30",
+      "slot": "evening",
+      "sector": "finance"
+    },
+    "d6d4e172d0e190ee": {
+      "title": "证监会就上市公司监管法规体系整合涉及相关规则公开征求意见",
+      "source": "中国证监会",
+      "date": "2026-10-30",
+      "slot": "evening",
+      "sector": "finance"
+    },
+    "54ecd0e874811ed6": {
+      "title": "中金：AI“次贷”的金融裂缝",
+      "source": "华尔街见闻",
+      "date": "2026-10-30",
+      "slot": "evening",
+      "sector": "finance"
+    },
+    "818f424aba5d642c": {
+      "title": "全国民航10月25日起执行冬春航季航班计划",
+      "source": "中国民用航空局",
+      "date": "2026-10-30",
+      "slot": "evening",
+      "sector": "travel"
+    },
+    "6030f018492a8bcb": {
+      "title": "宋志勇在2026北外滩国际航运论坛作主...",
+      "source": "中国民用航空局",
+      "date": "2026-10-30",
+      "slot": "evening",
+      "sector": "travel"
+    },
+    "6090caa6005b1f38": {
+      "title": "上水岭南花园精品酒店焕新启幕",
+      "source": "品橙旅游",
+      "date": "2026-10-30",
+      "slot": "evening",
+      "sector": "travel"
+    },
+    "2b520612132a3da0": {
+      "title": "全国消费品以旧换新工作推进电视电话会议在京召开",
+      "source": "商务部·消费",
+      "date": "2026-10-30",
+      "slot": "evening",
+      "sector": "consumer"
+    },
+    "ec1f79c20d0289e0": {
+      "title": "中国家具协会第八次会员代表大会在北京胜利召开",
+      "source": "中国家具协会",
+      "date": "2026-10-30",
+      "slot": "evening",
+      "sector": "consumer"
+    },
+    "6be231866662b94a": {
+      "title": "Tod’s 集团旗下品牌 Fay 加速海外扩张，计划2027年进军中国市场",
+      "source": "华丽志",
+      "date": "2026-10-30",
+      "slot": "evening",
+      "sector": "consumer"
     }
   },
   "days": {
@@ -352,6 +436,36 @@
         "cost": "calls=4 tokens=9720+11421",
         "sent": true,
         "subject": "Progress Log｜每日精进 · Daily Learning Pack｜10/30 早场"
+      },
+      "evening": {
+        "status": "ok",
+        "generated_at": "2026-10-30 17:24",
+        "english_articles": 3,
+        "english_minutes": 60,
+        "sector_minutes": 90,
+        "english_title": "# 01｜China expands foreign business access at world's largest free trade port",
+        "lead_title": "# 冬春航季换季叠加从化温泉新酒店开业：航线网络与目的地供给如何互相牵引",
+        "sectors": [
+          {
+            "key": "finance",
+            "title": "# 央行一口气放出五个信号：从“救急工具”到“AI次贷”，钱的价格正在被重新定义",
+            "minutes": 30
+          },
+          {
+            "key": "travel",
+            "title": "# 冬春航季换季叠加从化温泉新酒店开业：航线网络与目的地供给如何互相牵引",
+            "minutes": 35
+          },
+          {
+            "key": "consumer",
+            "title": "# 以旧换新带动2万亿销售之后，家居生意的下一步看哪里",
+            "minutes": 25
+          }
+        ],
+        "pack_url": "packs/2026-10-30-evening.html",
+        "cost": "calls=4 tokens=12329+12082",
+        "sent": true,
+        "subject": "Progress Log｜每日精进 · Daily Learning Pack｜10/30 晚场"
       }
     }
   },
@@ -366,6 +480,12 @@
       "key": "2026-10-30#morning",
       "date": "2026-10-30",
       "slot": "morning",
+      "status": "ok"
+    },
+    {
+      "key": "2026-10-30#evening",
+      "date": "2026-10-30",
+      "slot": "evening",
       "status": "ok"
     }
   ]
