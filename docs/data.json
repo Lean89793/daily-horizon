@@ -3,18 +3,18 @@
     "week": "2026-W44",
     "week_start": "2026-10-26",
     "week_end": "2026-11-01",
-    "english_count": 7,
-    "english_minutes": 180,
-    "sector_count": 9,
-    "sector_minutes": 270,
-    "total_minutes": 450,
-    "slots_done": 3,
+    "english_count": 0,
+    "english_minutes": 0,
+    "sector_count": 0,
+    "sector_minutes": 0,
+    "total_minutes": 0,
+    "slots_done": 0,
     "slots_planned": 14,
-    "progress": 0.2143,
+    "progress": 0.0,
     "sectors": {
-      "finance": 3,
-      "travel": 3,
-      "consumer": 3
+      "finance": 0,
+      "travel": 0,
+      "consumer": 0
     },
     "daily": [
       {
@@ -37,15 +37,15 @@
       },
       {
         "date": "2026-10-29",
-        "slots": 1,
+        "slots": 0,
         "morning": false,
-        "evening": true
+        "evening": false
       },
       {
         "date": "2026-10-30",
-        "slots": 2,
-        "morning": true,
-        "evening": true
+        "slots": 0,
+        "morning": false,
+        "evening": false
       },
       {
         "date": "2026-10-31",
@@ -61,17 +61,6 @@
       }
     ]
   },
-  "today": {
-    "morning": {
-      "done": true,
-      "title": "# 01｜How video game remakes tap the power of nostalgia",
-      "url": "packs/2026-10-30-morning.html"
-    },
-    "evening": {
-      "done": true,
-      "title": "# 01｜China expands foreign business access at world's largest free trade port",
-      "url": "packs/2026-10-30-evening.html"
-    }
-  },
-  "updated_at": "2026-10-30 17:24"
+  "today": {},
+  "updated_at": "2026-10-30 17:46"
 }
