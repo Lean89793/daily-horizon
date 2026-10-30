@@ -139,7 +139,11 @@ def _pull(
     pool: list[dict] = []
     for feed in feeds:
         try:
-            xml_text = http_get(feed["url"], timeout=25, retries=1)
+            # 政府站偶发挂起，官方列表页给更短的超时，避免拖垮整次任务
+            if feed.get("kind") == "html":
+                xml_text = http_get(feed["url"], timeout=12, retries=0)
+            else:
+                xml_text = http_get(feed["url"], timeout=25, retries=1)
         except Exception as exc:  # noqa: BLE001
             log(f"源不可用 {feed['name']}: {str(exc)[:80]}", "WARN")
             continue
