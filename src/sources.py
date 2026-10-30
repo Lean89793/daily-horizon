@@ -14,14 +14,14 @@ from __future__ import annotations
 # tag: politics / business / culture / ideas —— 对应 PRD 的四个方向
 # domestic=True 表示国内网络可直连，海外源被墙时作为兜底
 ENGLISH_FEEDS = [
-    {"name": "BBC News", "url": "https://feeds.bbci.co.uk/news/world/rss.xml", "tag": "politics", "weight": 2},
-    {"name": "BBC Business", "url": "https://feeds.bbci.co.uk/news/business/rss.xml", "tag": "business", "weight": 4},
-    {"name": "The Guardian", "url": "https://www.theguardian.com/world/rss", "tag": "politics", "weight": 2},
+    # 国际贸易：WTO 官方新闻（最权威的贸易口径）
+    {"name": "WTO News", "url": "https://www.wto.org/library/rss/latest_news_e.xml", "tag": "trade", "weight": 5, "official": True},
+    {"name": "BBC Business", "url": "https://feeds.bbci.co.uk/news/business/rss.xml", "tag": "business", "weight": 5},
+    {"name": "BBC World", "url": "https://feeds.bbci.co.uk/news/world/rss.xml", "tag": "politics", "weight": 4},
     {"name": "The Guardian Business", "url": "https://www.theguardian.com/business/rss", "tag": "business", "weight": 4},
-    {"name": "The Guardian Culture", "url": "https://www.theguardian.com/culture/rss", "tag": "culture", "weight": 3},
+    {"name": "The Guardian World", "url": "https://www.theguardian.com/world/rss", "tag": "politics", "weight": 3},
     {"name": "NPR World", "url": "https://feeds.npr.org/1004/rss.xml", "tag": "politics", "weight": 2},
-    {"name": "The Conversation", "url": "https://theconversation.com/articles.atom", "tag": "ideas", "weight": 3},
-    {"name": "Xinhua English", "url": "http://www.xinhuanet.com/english/rss/worldrss.xml", "tag": "politics", "weight": 1, "domestic": True},
+    {"name": "Xinhua English", "url": "http://www.xinhuanet.com/english/rss/worldrss.xml", "tag": "politics", "weight": 2, "domestic": True},
 ]
 
 # ---------------------------------------------------------------- 行业素材
@@ -82,6 +82,26 @@ BLOCK_KEYWORDS = [
 ]
 
 # 英文源过滤：灾难/犯罪/战争类不适合做精读，且容易触发内容风险
+# 英语精读只要「政治 / 经济 / 国际贸易」，社会民生与娱乐一律不进
+EN_TOPIC_INCLUDE = [
+    "trade", "tariff", "export", "import", "econom", "inflation", "gdp", "central bank",
+    "interest rate", "monetary", "fiscal", "budget", "sanction", "supply chain",
+    "investment", "market", "policy", "government", "ministry", "minister", "parliament",
+    "diplomat", "summit", "treaty", "negotiat", "wto", "imf", "world bank", "bilateral",
+    "multilateral", "manufactur", "industry", "regulator", "regulation", "reform",
+    "deficit", "debt", "currency", "yuan", "dollar", "stocks", "bond", "energy",
+    "semiconductor", "chip", "shipping", "customs", "foreign direct",
+]
+
+EN_TOPIC_EXCLUDE = [
+    "celebrity", "royal family", "kardashian", "oscar", "grammy", "box office",
+    "film review", "recipe", "horoscope", "fashion week", "diet", "workout",
+    "weight loss", "dating", "wedding", "pregnancy", "parenting", "pet ",
+    "weather forecast", "football", "soccer", "olympic", "cricket", "tennis",
+    "basketball", "match report", "album", "concert", "netflix", "tv series",
+    "video game", "gaming", "tourism tips", "travel tips",
+]
+
 EN_BLOCK_KEYWORDS = [
     "deadly", "death toll", "killed", "kills ", "shooting", "murder", "rape",
     "suicide", "corpse", "wounded", "injured", "missile", "airstrike", "air strike",
