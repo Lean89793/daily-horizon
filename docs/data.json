@@ -3,18 +3,18 @@
     "week": "2026-W44",
     "week_start": "2026-10-26",
     "week_end": "2026-11-01",
-    "english_count": 2,
-    "english_minutes": 60,
-    "sector_count": 3,
-    "sector_minutes": 90,
-    "total_minutes": 150,
-    "slots_done": 1,
+    "english_count": 4,
+    "english_minutes": 120,
+    "sector_count": 6,
+    "sector_minutes": 180,
+    "total_minutes": 300,
+    "slots_done": 2,
     "slots_planned": 14,
-    "progress": 0.0714,
+    "progress": 0.1429,
     "sectors": {
-      "finance": 1,
-      "travel": 1,
-      "consumer": 1
+      "finance": 2,
+      "travel": 2,
+      "consumer": 2
     },
     "daily": [
       {
@@ -43,8 +43,8 @@
       },
       {
         "date": "2026-10-30",
-        "slots": 0,
-        "morning": false,
+        "slots": 1,
+        "morning": true,
         "evening": false
       },
       {
@@ -62,11 +62,11 @@
     ]
   },
   "today": {
-    "evening": {
+    "morning": {
       "done": true,
-      "title": "# 01｜With most votes counted, Israeli election reaches a stalemate",
-      "url": "packs/2026-10-29-evening.html"
+      "title": "# 01｜How video game remakes tap the power of nostalgia",
+      "url": "packs/2026-10-30-morning.html"
     }
   },
-  "updated_at": "2026-10-29 21:01"
+  "updated_at": "2026-10-30 16:11"
 }

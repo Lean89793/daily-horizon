@@ -189,6 +189,104 @@
       "date": "2026-10-29",
       "slot": "evening",
       "sector": "travel"
+    },
+    "886dd10c3c458307": {
+      "title": "How video game remakes tap the power of nostalgia",
+      "source": "BBC Business",
+      "date": "2026-10-30",
+      "slot": "morning",
+      "sector": "english"
+    },
+    "c3dab91be82f3da0": {
+      "title": "Crypto giant Binance hit by $6.3bn hack suspected to be largest in history",
+      "source": "BBC Business",
+      "date": "2026-10-30",
+      "slot": "morning",
+      "sector": "english"
+    },
+    "0fa8b6cdadf34dd9": {
+      "title": "华尔街见闻早餐FM-Radio | 2026年10月30日",
+      "source": "华尔街见闻",
+      "date": "2026-10-30",
+      "slot": "morning",
+      "sector": "finance"
+    },
+    "9286daad8e9caaf5": {
+      "title": "每天烧掉3300亿Token，中国平安三季报说了啥？",
+      "source": "华尔街见闻",
+      "date": "2026-10-30",
+      "slot": "morning",
+      "sector": "finance"
+    },
+    "5a741e3c7145274a": {
+      "title": "全球科技股“惨遭血洗”！韩股收跌3.53%，纳指期货跌2%，黄金跌破4000美元",
+      "source": "华尔街见闻",
+      "date": "2026-10-30",
+      "slot": "morning",
+      "sector": "finance"
+    },
+    "e710b57b2def66c2": {
+      "title": "京东大小家电双11销售额市占稳居行业第一 送装一体服务与全渠道融合成重要支撑",
+      "source": "电商派",
+      "date": "2026-10-30",
+      "slot": "morning",
+      "sector": "consumer"
+    },
+    "324c736b702f4a7f": {
+      "title": "双11服务战升级：京东联合家电家居品牌发布送装服务升级_海尔_美的_格力_京东_双11",
+      "source": "中国家电网",
+      "date": "2026-10-30",
+      "slot": "morning",
+      "sector": "consumer"
+    },
+    "94b0cde8d8e9901f": {
+      "title": "告别单打独斗！家居家电AI化进入平台协同时代",
+      "source": "比特网",
+      "date": "2026-10-30",
+      "slot": "morning",
+      "sector": "consumer"
+    },
+    "d7c528ea93aa7a96": {
+      "title": "逾百家企业共同启动“焕新·适我”家居高质量发展品牌行动",
+      "source": "搜狐网",
+      "date": "2026-10-30",
+      "slot": "morning",
+      "sector": "consumer"
+    },
+    "5c88916547c55e86": {
+      "title": "聚焦“焕新·适我”2026家居高质量发展品牌大会在京举行",
+      "source": "搜狐网",
+      "date": "2026-10-30",
+      "slot": "morning",
+      "sector": "consumer"
+    },
+    "7a10ec92b92e7a59": {
+      "title": "重磅！2026家居高质量发展品牌案例（33个品类）公开发布",
+      "source": "搜狐网",
+      "date": "2026-10-30",
+      "slot": "morning",
+      "sector": "consumer"
+    },
+    "f32e65cad19c4660": {
+      "title": "上海迪士尼第三座主题酒店将于12月16日开业",
+      "source": "品橙旅游",
+      "date": "2026-10-30",
+      "slot": "morning",
+      "sector": "travel"
+    },
+    "090590157b0ccee1": {
+      "title": "成为海外游客“0米目的地”，“海上之窗”邮轮入境游市集开启",
+      "source": "上观新闻",
+      "date": "2026-10-30",
+      "slot": "morning",
+      "sector": "travel"
+    },
+    "1193e89ce3f60087": {
+      "title": "数读财报:谁是2026年三季度上市旅游公司“黑马”",
+      "source": "品橙旅游",
+      "date": "2026-10-30",
+      "slot": "morning",
+      "sector": "travel"
     }
   },
   "days": {
@@ -223,6 +321,38 @@
         "sent": false,
         "subject": "Progress Log｜每日精进 · Daily Learning Pack｜10/29 晚场"
       }
+    },
+    "2026-10-30": {
+      "morning": {
+        "status": "ok",
+        "generated_at": "2026-10-30 16:11",
+        "english_articles": 2,
+        "english_minutes": 60,
+        "sector_minutes": 90,
+        "english_title": "# 01｜How video game remakes tap the power of nostalgia",
+        "lead_title": "# 京东双11家电送装服务升级、家居AI转向平台协同：家居消费正在把“安装交付”变成竞争前线",
+        "sectors": [
+          {
+            "key": "finance",
+            "title": "# AI 财报季的“算账时刻”：Alphabet 单日蒸发 4790 亿美元，算力硬件链集体重挫",
+            "minutes": 30
+          },
+          {
+            "key": "consumer",
+            "title": "# 京东双11家电送装服务升级、家居AI转向平台协同：家居消费正在把“安装交付”变成竞争前线",
+            "minutes": 35
+          },
+          {
+            "key": "travel",
+            "title": "# 上海迪士尼开第三座酒店、三季度旅企财报出炉：旅游产业链上谁在赚钱，谁在硬撑",
+            "minutes": 25
+          }
+        ],
+        "pack_url": "packs/2026-10-30-morning.html",
+        "cost": "calls=4 tokens=9720+11421",
+        "sent": true,
+        "subject": "Progress Log｜每日精进 · Daily Learning Pack｜10/30 早场"
+      }
     }
   },
   "history": [
@@ -230,6 +360,12 @@
       "key": "2026-10-29#evening",
       "date": "2026-10-29",
       "slot": "evening",
+      "status": "ok"
+    },
+    {
+      "key": "2026-10-30#morning",
+      "date": "2026-10-30",
+      "slot": "morning",
       "status": "ok"
     }
   ]
