@@ -177,13 +177,31 @@ def _pull(
 def collect_english(state: State, target_words: int, max_articles: int, now: datetime, rng: random.Random) -> list[dict]:
     feeds = official.GOV_FEEDS.get("english", []) + sources.ENGLISH_FEEDS
     pool = _pull(feeds, MAX_AGE_HOURS["english"], state, now, rng, english=True)
+
+    # 题材闸门：只要政治 / 经济 / 国际贸易；社会民生与娱乐直接剔除
+    def topic_ok(it: dict, strict: bool) -> bool:
+        blob = f"{it.get('title', '')} {it.get('summary', '')}".lower()
+        if any(k in blob for k in sources.EN_TOPIC_EXCLUDE):
+            return False
+        if strict and not any(k in blob for k in sources.EN_TOPIC_INCLUDE):
+            return False
+        return True
+
+    strict_pool = [i for i in pool if topic_ok(i, True)]
+    if len(strict_pool) < 3:
+        have = {i["id"] for i in strict_pool}
+        strict_pool += [i for i in pool if i["id"] not in have and topic_ok(i, False)]
+    log(f"英语选题过滤：{len(pool)} → {len(strict_pool)} 条（政治/经济/贸易）")
+    pool = strict_pool
+
     picked: list[dict] = []
     words = 0
 
     for item in pool:
         body = extract.article_text(item["link"], max_words=max(520, target_words // 2))
         wc = len(body.split())
-        if wc < 150:
+        min_words = 120 if item.get("official") else 150
+        if wc < min_words:
             log(f"  跳过（正文过短 {wc} 词）: {item['title'][:50]}")
             continue
         item["body"] = body
