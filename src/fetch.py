@@ -204,6 +204,8 @@ def collect_sector(sector: str, state: State, now: datetime, rng: random.Random,
         pool.sort(key=lambda i: -sum(1 for k in kws if k in f"{i['title']} {i['summary']}"))
 
     picked: list[dict] = []
+    solid: list[dict] = []
+    thin: list[dict] = []
 
     for item in pool:
         blob = f"{item['title']} {item['summary']}"
@@ -212,25 +214,33 @@ def collect_sector(sector: str, state: State, now: datetime, rng: random.Random,
         if kws and item.get("general") and hits == 0:
             continue
         body = extract.article_text(item["link"], max_words=1800)
-        if len(body) < 120:
-            body = item.get("summary", "")
-            item["text_quality"] = "summary"
-        else:
+        if len(body) >= 120:
             item["text_quality"] = "full"
+        else:
+            # 正文抓不到时退回摘要，但摘要本身必须够长，否则等于只有标题
+            summary = (item.get("summary") or "").strip()
+            if len(summary) < 150:
+                continue
+            body = summary
+            item["text_quality"] = "summary"
         if not body.strip():
             continue
         item["body"] = body
         item["chars"] = len(body)
-        picked.append(item)
+        (solid if item["text_quality"] == "full" else thin).append(item)
 
         # 央媒短讯多，单篇只有几百字，凑够可读体量再多取几篇
-        total_chars = sum(p.get("chars", 0) for p in picked)
-        if len(picked) >= want and total_chars >= 1200:
+        if len(solid) >= want and sum(p["chars"] for p in solid) >= 1200:
             break
-        if len(picked) >= want * 2:
+        if len(solid) + len(thin) >= want * 3:
             break
 
-    log(f"{sector} 素材：{len(picked)} 篇 / {sum(p.get('chars', 0) for p in picked)} 字")
+    picked = solid[:want]
+    if len(picked) < want:
+        picked.extend(thin[: want - len(picked)])
+
+    log(f"{sector} 素材：{len(picked)} 篇 / {sum(p.get('chars', 0) for p in picked)} 字"
+        f"（全文 {len(solid)} / 摘要 {len(thin)}）")
     return picked
 
 
