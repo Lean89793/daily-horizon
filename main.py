@@ -121,14 +121,18 @@ def run(args: argparse.Namespace) -> int:
             cfg.llm_key, cfg.llm_base, cfg.llm_model, cfg.llm_temperature, cfg.llm_timeout
         )
         log("生成英语精读…")
-        english_md = gen_english(client, english_items, cfg.get("english", "target_words", default=780), 60)
+        english_md = mdhtml.merge_translations(
+            gen_english(client, english_items, cfg.get("english", "target_words", default=780), 60)
+        )
         sector_md = {}
         for key in plan["order"]:
             if not sector_items.get(key):
                 continue
             log(f"生成 {key} 板块…")
             minutes = plan.get(f"{'lead' if plan['lead'] == key else ('finance' if key == 'finance' else 'side')}_minutes", 25)
-            sector_md[key] = gen_sector(client, key, sector_items[key], minutes)
+            sector_md[key] = mdhtml.merge_translations(
+                gen_sector(client, key, sector_items[key], minutes)
+            )
         cost_note = f"calls={client.calls} tokens={client.tokens['prompt']}+{client.tokens['completion']}"
 
     # ---------- 组装 ----------
@@ -195,7 +199,8 @@ def run(args: argparse.Namespace) -> int:
 
     week_preview = _preview_week(state, date_str, slot, payload, now)
     email_html = package.to_email_html(pack, week_preview, cfg.panel_url, cfg.mailbox_url, pack_url)
-    write_text(ROOT / "docs" / pack_rel, email_html)
+    page_html = package.to_page_html(pack, week_preview, cfg.panel_url, f"{date_str}-{slot}")
+    write_text(ROOT / "docs" / pack_rel, page_html)
     log(f"存档：{md_path.name} / docs/{pack_rel}")
 
     # 标题保留 PRD 固定模板作前缀，后缀区分早晚场
