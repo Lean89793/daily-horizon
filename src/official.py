@@ -76,12 +76,6 @@ GOV_FEEDS = {
             "weight": 4,
             "general": True,
         },
-        {
-            "name": "中国连锁经营协会",
-            "url": "http://www.ccfa.org.cn/",
-            "link_re": r"mp\.weixin\.qq\.com/s/",
-            "weight": 3,
-        },
     ],
     "english": [
         {
