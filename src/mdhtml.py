@@ -169,3 +169,62 @@ def plain_text(md: str) -> str:
     text = re.sub(r"\*(.+?)\*", r"\1", text)
     text = re.sub(r"^>\s?", "", text, flags=re.M)
     return text.strip()
+
+
+# ---------------------------------------------------------------- 译文合并
+_PARA_MARK = re.compile(r"^####\s*¶")
+
+
+def _merge_block(buf: list[str]) -> list[str]:
+    """把 ¶ 块内被模型拆散的译文合并成一个自然段。"""
+    paras, cur = [], []
+    for ln in buf:
+        if ln.strip():
+            cur.append(ln.strip())
+        elif cur:
+            paras.append(" ".join(cur))
+            cur = []
+    if cur:
+        paras.append(" ".join(cur))
+    if not paras:
+        return buf
+
+    en, zh, quotes = [], [], []
+    for p in paras:
+        if p.startswith(">"):
+            quotes.append(p)
+        elif _cjk_ratio(p) >= 0.25:
+            zh.append(p)
+        else:
+            en.append(p)
+
+    if len(zh) <= 1:
+        return buf  # 本来就规整，别动
+
+    out = []
+    for p in en:
+        out.extend([p, ""])
+    out.extend(["".join(zh), ""])
+    for q in quotes:
+        out.extend([q, ""])
+    return out
+
+
+def merge_translations(md: str) -> str:
+    """逐 ¶ 处理：一段英文只配一段中文，杜绝"一句一句"的排版。"""
+    lines = md.split("\n")
+    out, i, n = [], 0, len(lines)
+    while i < n:
+        line = lines[i]
+        if _PARA_MARK.match(line.strip()):
+            out.append(line)
+            i += 1
+            buf = []
+            while i < n and not re.match(r"^#{3,4}\s", lines[i].strip()):
+                buf.append(lines[i])
+                i += 1
+            out.extend(_merge_block(buf))
+            continue
+        out.append(line)
+        i += 1
+    return "\n".join(out)
