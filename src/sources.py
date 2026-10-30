@@ -53,6 +53,7 @@ SECTOR_FEEDS = {
         },
     ],
     "consumer": [
+        {"name": "华丽志", "url": "https://www.luxe.co/feed", "weight": 3},
         {
             "name": "Google News·家居餐具",
             "url": "https://news.google.com/rss/search?q=%E5%AE%B6%E5%B1%85+OR+%E9%A4%90%E5%85%B7+OR+%E5%8E%A8%E5%85%B7+OR+%E9%AA%A8%E7%93%B7+OR+%E5%AE%B6%E7%94%B5+%E8%A1%8C%E4%B8%9A+when:7d&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
