@@ -1,0 +1,238 @@
+"""素材采集：解析 RSS/Atom、过滤、去重、补正文。"""
+
+from __future__ import annotations
+
+import random
+import re
+from datetime import datetime, timedelta
+from email.utils import parsedate_to_datetime
+from xml.etree import ElementTree as ET
+
+from . import extract, sources
+from .state import State
+from .util import CST, http_get, item_id, log, strip_tags, write_json
+
+MAX_AGE_HOURS = {"english": 96, "sector": 24 * 21}
+
+
+def _local(tag: str) -> str:
+    return tag.rsplit("}", 1)[-1].lower()
+
+
+def _text(node) -> str:
+    return strip_tags("".join(node.itertext())) if node is not None else ""
+
+
+def _parse_date(raw: str) -> datetime | None:
+    if not raw:
+        return None
+    raw = raw.strip()
+    try:
+        dt = parsedate_to_datetime(raw)
+        return dt.astimezone(CST) if dt.tzinfo else dt.replace(tzinfo=CST)
+    except Exception:  # noqa: BLE001
+        pass
+    for fmt in ("%Y-%m-%dT%H:%M:%S%z", "%Y-%m-%dT%H:%M:%SZ", "%Y-%m-%d %H:%M:%S"):
+        try:
+            dt = datetime.strptime(raw, fmt)
+            return dt.astimezone(CST) if dt.tzinfo else dt.replace(tzinfo=CST)
+        except ValueError:
+            continue
+    return None
+
+
+def _date_from_url(link: str) -> datetime | None:
+    """央媒 RSS 常缺 pubDate，但链接里带日期：/n1/2026/1029/c1.html。"""
+    patterns = [
+        r"/(20\d{2})/(\d{2})(\d{2})/",
+        r"/(20\d{2})-(\d{2})/(\d{2})/",
+        r"/(20\d{2})(\d{2})(\d{2})[/_\-]",
+    ]
+    for pat in patterns:
+        m = re.search(pat, link)
+        if not m:
+            continue
+        try:
+            return datetime(int(m.group(1)), int(m.group(2)), int(m.group(3)), 12, 0, tzinfo=CST)
+        except ValueError:
+            continue
+    return None
+
+
+def parse_feed(xml_text: str, feed: dict) -> list[dict]:
+    """解析 RSS 2.0 / Atom，返回统一结构的条目列表。"""
+    items: list[dict] = []
+    try:
+        root = ET.fromstring(xml_text.strip())
+    except ET.ParseError:
+        return items
+
+    nodes = [n for n in root.iter() if _local(n.tag) in ("item", "entry")]
+    for node in nodes:
+        title = link = summary = pub = source_name = ""
+        for child in node:
+            name = _local(child.tag)
+            if name == "title":
+                title = _text(child)
+            elif name == "link":
+                link = child.get("href") or _text(child)
+            elif name in ("description", "summary", "content"):
+                summary = summary or _text(child)
+            elif name in ("pubdate", "published", "updated", "date"):
+                pub = pub or _text(child)
+            elif name == "source":
+                source_name = _text(child)
+
+        title = re.sub(r"\s+", " ", title).strip()
+        if not title or not link:
+            continue
+
+        # Google News 标题尾部带 " - 来源名"
+        if source_name and title.endswith(f" - {source_name}"):
+            title = title[: -(len(source_name) + 3)].strip()
+        elif " - " in title and feed.get("name", "").startswith("Google News"):
+            title, source_name = title.rsplit(" - ", 1)
+
+        published = _parse_date(pub) or _date_from_url(link)
+        items.append(
+            {
+                "id": item_id(title),
+                "title": title,
+                "link": link,
+                "source": source_name or feed["name"],
+                "feed": feed["name"],
+                "summary": summary[:2000],
+                "published": published.strftime("%Y-%m-%d %H:%M") if published else "",
+                "published_dt": published,
+                "tag": feed.get("tag", ""),
+                "weight": feed.get("weight", 1),
+                "general": feed.get("general", False),
+                "gnews": "news.google.com" in link,
+            }
+        )
+    return items
+
+
+def _age_ok(item: dict, limit_hours: int, now: datetime) -> bool:
+    dt = item.get("published_dt")
+    if not dt:
+        return True  # 无日期不拦，交给 LLM 判时效
+    return now - dt <= timedelta(hours=limit_hours)
+
+
+def _blocked(item: dict, english: bool = False) -> bool:
+    blob = f"{item.get('title', '')} {item.get('summary', '')}"
+    for kw in sources.SENSITIVE_KEYWORDS + sources.BLOCK_KEYWORDS:
+        if kw in blob:
+            return True
+    if english:
+        low = blob.lower()
+        for kw in sources.EN_BLOCK_KEYWORDS:
+            if kw in low:
+                return True
+    return False
+
+
+def _pull(
+    feeds: list[dict], limit_hours: int, state: State, now: datetime, rng: random.Random, english: bool = False
+) -> list[dict]:
+    pool: list[dict] = []
+    for feed in feeds:
+        try:
+            xml_text = http_get(feed["url"], timeout=25, retries=1)
+        except Exception as exc:  # noqa: BLE001
+            log(f"源不可用 {feed['name']}: {str(exc)[:80]}", "WARN")
+            continue
+        got = parse_feed(xml_text, feed)
+        if not got:
+            log(f"源返回 0 条（可能已改版或反爬）{feed['name']}", "WARN")
+            continue
+        fresh = [
+            i for i in got
+            if not state.is_seen(i["id"]) and _age_ok(i, limit_hours, now) and not _blocked(i, english)
+        ]
+        log(f"  {feed['name']}: {len(got)} 条，可用 {len(fresh)} 条")
+        pool.extend(fresh)
+
+    # 近 24 小时权重更高；同权重内随机，避免每天顺序雷同
+    def sort_key(i: dict):
+        dt = i.get("published_dt")
+        recency = (now - dt).total_seconds() / 3600 if dt else 999
+        return (-i["weight"], recency + rng.random() * 6)
+
+    pool.sort(key=sort_key)
+    seen_titles, deduped = set(), []
+    for i in pool:
+        if i["id"] in seen_titles:
+            continue
+        seen_titles.add(i["id"])
+        deduped.append(i)
+    return deduped
+
+
+# ------------------------------------------------------------------ 英语
+def collect_english(state: State, target_words: int, max_articles: int, now: datetime, rng: random.Random) -> list[dict]:
+    pool = _pull(sources.ENGLISH_FEEDS, MAX_AGE_HOURS["english"], state, now, rng, english=True)
+    picked: list[dict] = []
+    words = 0
+
+    for item in pool:
+        body = extract.article_text(item["link"], max_words=max(520, target_words // 2))
+        wc = len(body.split())
+        if wc < 150:
+            log(f"  跳过（正文过短 {wc} 词）: {item['title'][:50]}")
+            continue
+        item["body"] = body
+        item["words"] = wc
+        picked.append(item)
+        words += wc
+        if len(picked) >= max_articles or (words >= target_words * 1.25 and len(picked) >= 2):
+            break
+
+    log(f"英语素材：{len(picked)} 篇 / 约 {words} 词")
+    return picked
+
+
+# ------------------------------------------------------------------ 行业
+def collect_sector(sector: str, state: State, now: datetime, rng: random.Random, want: int = 3) -> list[dict]:
+    feeds = sources.SECTOR_FEEDS.get(sector, [])
+    pool = _pull(feeds, MAX_AGE_HOURS["sector"], state, now, rng)
+
+    # 综合源（如界面新闻）会把体育娱乐混进来，按板块关键词优先排序
+    kws = sources.SECTOR_KEYWORDS.get(sector, [])
+    if kws:
+        pool.sort(key=lambda i: -sum(1 for k in kws if k in f"{i['title']} {i['summary']}"))
+
+    picked: list[dict] = []
+
+    for item in pool:
+        blob = f"{item['title']} {item['summary']}"
+        hits = sum(1 for k in kws if k in blob) if kws else 1
+        # 综合源里与板块无关的条目直接丢弃，避免旅游板块写进体育新闻
+        if kws and item.get("general") and hits == 0:
+            continue
+        body = extract.article_text(item["link"], max_words=1800)
+        if len(body) < 120:
+            body = item.get("summary", "")
+            item["text_quality"] = "summary"
+        else:
+            item["text_quality"] = "full"
+        if not body.strip():
+            continue
+        item["body"] = body
+        item["chars"] = len(body)
+        picked.append(item)
+
+        # 央媒短讯多，单篇只有几百字，凑够可读体量再多取几篇
+        total_chars = sum(p.get("chars", 0) for p in picked)
+        if len(picked) >= want and total_chars >= 1200:
+            break
+        if len(picked) >= want * 2:
+            break
+
+    log(f"{sector} 素材：{len(picked)} 篇 / {sum(p.get('chars', 0) for p in picked)} 字")
+    return picked
+
+
+def dump_candidates(items: list[dict], path) -> None:
+    write_json(path, [{k: v for k, v in i.items() if k != "published_dt"} for i in items])

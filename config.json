@@ -1,0 +1,38 @@
+{
+  "project": "Daily Horizon",
+  "timezone": "Asia/Shanghai",
+  "english": {
+    "target_words": 780,
+    "max_articles": 3,
+    "min_words_per_article": 180
+  },
+  "industry": {
+    "total_minutes": 90,
+    "lead_minutes": 40,
+    "side_minutes": 25,
+    "candidates_per_sector": 4
+  },
+  "mail": {
+    "host": "smtp.qq.com",
+    "port": 465,
+    "ssl": true,
+    "from_name": "Daily Horizon",
+    "subject": "Progress Log｜每日精进 · Daily Learning Pack",
+    "mailbox_url": "https://mail.qq.com"
+  },
+  "llm": {
+    "base_url": "https://api.deepseek.com",
+    "model": "deepseek-chat",
+    "temperature": 0.6,
+    "timeout": 240
+  },
+  "panel": {
+    "title": "Daily Horizon",
+    "subtitle": "每日精进 · 学习面板",
+    "url": ""
+  },
+  "sources": {
+    "strict_whitelist": true,
+    "per_sector_max": 3
+  }
+}

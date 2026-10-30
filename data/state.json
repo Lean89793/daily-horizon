@@ -1,0 +1,236 @@
+{
+  "version": 1,
+  "seen": {
+    "fd03dd6f80b1afd2": {
+      "title": "Global shipping costs ease as new container capacity comes online",
+      "source": "BBC News",
+      "date": "2026-10-29",
+      "slot": "evening",
+      "sector": "english"
+    },
+    "4d065103fe15925a": {
+      "title": "Cities are turning empty offices into housing, slowly",
+      "source": "The Guardian",
+      "date": "2026-10-29",
+      "slot": "evening",
+      "sector": "english"
+    },
+    "659e75c14a65ff28": {
+      "title": "finance 样刊素材",
+      "source": "样刊",
+      "date": "2026-10-29",
+      "slot": "evening",
+      "sector": "finance"
+    },
+    "aa8a7158a6b44e07": {
+      "title": "travel 样刊素材",
+      "source": "样刊",
+      "date": "2026-10-29",
+      "slot": "evening",
+      "sector": "travel"
+    },
+    "19c00e3df01d68a0": {
+      "title": "consumer 样刊素材",
+      "source": "样刊",
+      "date": "2026-10-29",
+      "slot": "evening",
+      "sector": "consumer"
+    },
+    "58c96afefd719874": {
+      "title": "GDP report to give insight before Election Day. And, Israel's election is deadlocked",
+      "source": "NPR World",
+      "date": "2026-10-29",
+      "slot": "evening",
+      "sector": "english"
+    },
+    "45ae4c5bd8e3163f": {
+      "title": "Brazilian political drama unfolds as defeated Flavio Bolsonaro arrives in Miami",
+      "source": "NPR World",
+      "date": "2026-10-29",
+      "slot": "evening",
+      "sector": "english"
+    },
+    "e3df2c702db974ac": {
+      "title": "工行、建行A股市值再创新高，国有大行年内61次刷新纪录",
+      "source": "华尔街见闻",
+      "date": "2026-10-29",
+      "slot": "evening",
+      "sector": "finance"
+    },
+    "4c9a3048551ab5ea": {
+      "title": "新债王：美联储“瞄瞄瞄、就是不开枪”，CPI“重回4字头”，AI信贷危机类似“次贷前夜”",
+      "source": "华尔街见闻",
+      "date": "2026-10-29",
+      "slot": "evening",
+      "sector": "finance"
+    },
+    "74f60cb5572d932e": {
+      "title": "A股双创指数均跌超4%，算力硬件集体调整，四大行总市值突破10万亿元，恒科指跌近3%，科网股普跌",
+      "source": "华尔街见闻",
+      "date": "2026-10-29",
+      "slot": "evening",
+      "sector": "finance"
+    },
+    "2761356e2deaedb6": {
+      "title": "亚马逊推出五款新一代Alexa设备，涵盖智能音箱、闹钟及智能显示屏",
+      "source": "界面新闻",
+      "date": "2026-10-29",
+      "slot": "evening",
+      "sector": "consumer"
+    },
+    "ac71a53649145153": {
+      "title": "珀莱雅前三季度营收超76亿元，第三季度单季同比增长29.76%；蜜雪集团与悦鲜活达成战略合作；滔搏与NBA战略合作升级｜消研所周报",
+      "source": "钛媒体",
+      "date": "2026-10-29",
+      "slot": "evening",
+      "sector": "consumer"
+    },
+    "cf7682ba563ad7d0": {
+      "title": "国航开通北京—哥本哈根—雷克雅未克客运航线",
+      "source": "品橙旅游",
+      "date": "2026-10-29",
+      "slot": "evening",
+      "sector": "travel"
+    },
+    "81cebb77f71b0545": {
+      "title": "君亭酒店2026年三季度净利润298.78万元",
+      "source": "品橙旅游",
+      "date": "2026-10-29",
+      "slot": "evening",
+      "sector": "travel"
+    },
+    "8718ea8f4dbffeef": {
+      "title": "曲江文旅2026年三季度净亏损3125.63万元",
+      "source": "品橙旅游",
+      "date": "2026-10-29",
+      "slot": "evening",
+      "sector": "travel"
+    },
+    "d9053680eb89c870": {
+      "title": "黄山旅游2026年三季度净利润同比下降34.34%",
+      "source": "品橙旅游",
+      "date": "2026-10-29",
+      "slot": "evening",
+      "sector": "travel"
+    },
+    "2a85ba3995d0bdc6": {
+      "title": "从“当天往返”到“多住一晚”,京郊赏秋游抢滩过夜经济",
+      "source": "品橙旅游",
+      "date": "2026-10-29",
+      "slot": "evening",
+      "sector": "travel"
+    },
+    "097069ae081d8082": {
+      "title": "With most votes counted, Israeli election reaches a stalemate",
+      "source": "NPR World",
+      "date": "2026-10-29",
+      "slot": "evening",
+      "sector": "english"
+    },
+    "1d63adf14828cf53": {
+      "title": "Dozens are dead in a high-speed train crash in Spain",
+      "source": "NPR World",
+      "date": "2026-10-29",
+      "slot": "evening",
+      "sector": "english"
+    },
+    "f5555d255ab05d49": {
+      "title": "美联储按兵不动，美股指三连涨，甲骨文大涨11%，盘后谷歌大跌10%、微软走强",
+      "source": "华尔街见闻",
+      "date": "2026-10-29",
+      "slot": "evening",
+      "sector": "finance"
+    },
+    "979a9d52b0567da2": {
+      "title": "华尔街见闻早餐FM-Radio | 2026年10月29日",
+      "source": "华尔街见闻",
+      "date": "2026-10-29",
+      "slot": "evening",
+      "sector": "finance"
+    },
+    "6c277b39b15f6f3e": {
+      "title": "野村：Anthropic和SK海力士双重提振，美股已“摆脱恐慌”并“关键性企稳”",
+      "source": "华尔街见闻",
+      "date": "2026-10-29",
+      "slot": "evening",
+      "sector": "finance"
+    },
+    "54a2603fdf5aef50": {
+      "title": "三丽鸥塌房，国内最大受害者是网易",
+      "source": "界面新闻",
+      "date": "2026-10-29",
+      "slot": "evening",
+      "sector": "consumer"
+    },
+    "8f0f533fa9f7514e": {
+      "title": "九华旅游2026年三季度净利润3974.81万元",
+      "source": "品橙旅游",
+      "date": "2026-10-29",
+      "slot": "evening",
+      "sector": "travel"
+    },
+    "2eaca607dbe84df9": {
+      "title": "金陵饭店2026年三季度净利润1779.88万元",
+      "source": "品橙旅游",
+      "date": "2026-10-29",
+      "slot": "evening",
+      "sector": "travel"
+    },
+    "4e42c2db643c1d96": {
+      "title": "金马游乐2026年三季度净亏损878.89万元",
+      "source": "品橙旅游",
+      "date": "2026-10-29",
+      "slot": "evening",
+      "sector": "travel"
+    },
+    "5a98f2319877de1d": {
+      "title": "长白山2026年三季度净利润1.39亿元",
+      "source": "品橙旅游",
+      "date": "2026-10-29",
+      "slot": "evening",
+      "sector": "travel"
+    }
+  },
+  "days": {
+    "2026-10-29": {
+      "evening": {
+        "status": "ok",
+        "generated_at": "2026-10-29 21:01",
+        "english_articles": 2,
+        "english_minutes": 60,
+        "sector_minutes": 90,
+        "english_title": "# 01｜With most votes counted, Israeli election reaches a stalemate",
+        "lead_title": "# 三丽鸥联名风波：一个IP授权池，为什么让网易的排期表最难受",
+        "sectors": [
+          {
+            "key": "finance",
+            "title": "# 美联储按兵不动、甲骨文与谷歌财报分道扬镳：一个“钱变贵了”的市场，钱正在往哪里走",
+            "minutes": 30
+          },
+          {
+            "key": "consumer",
+            "title": "# 三丽鸥联名风波：一个IP授权池，为什么让网易的排期表最难受",
+            "minutes": 35
+          },
+          {
+            "key": "travel",
+            "title": "# 四家旅游公司三季报同日放榜：景区赚钱、酒店微增、设备商腰斩，钱在产业链哪个环节沉淀？",
+            "minutes": 25
+          }
+        ],
+        "pack_url": "packs/2026-10-29-evening.html",
+        "cost": "calls=4 tokens=10206+14098",
+        "sent": false,
+        "subject": "Progress Log｜每日精进 · Daily Learning Pack｜10/29 晚场"
+      }
+    }
+  },
+  "history": [
+    {
+      "key": "2026-10-29#evening",
+      "date": "2026-10-29",
+      "slot": "evening",
+      "status": "ok"
+    }
+  ]
+}

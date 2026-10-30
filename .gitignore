@@ -1,0 +1,16 @@
+# 密钥与本地文件
+.env
+config.local.json
+
+# 运行产物
+__pycache__/
+*.pyc
+.cache/
+
+# 编辑器
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# 注意：data/ 与 docs/ 必须提交，它们是状态库与面板数据

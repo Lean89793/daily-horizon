@@ -1,0 +1,72 @@
+{
+  "week": {
+    "week": "2026-W44",
+    "week_start": "2026-10-26",
+    "week_end": "2026-11-01",
+    "english_count": 2,
+    "english_minutes": 60,
+    "sector_count": 3,
+    "sector_minutes": 90,
+    "total_minutes": 150,
+    "slots_done": 1,
+    "slots_planned": 14,
+    "progress": 0.0714,
+    "sectors": {
+      "finance": 1,
+      "travel": 1,
+      "consumer": 1
+    },
+    "daily": [
+      {
+        "date": "2026-10-26",
+        "slots": 0,
+        "morning": false,
+        "evening": false
+      },
+      {
+        "date": "2026-10-27",
+        "slots": 0,
+        "morning": false,
+        "evening": false
+      },
+      {
+        "date": "2026-10-28",
+        "slots": 0,
+        "morning": false,
+        "evening": false
+      },
+      {
+        "date": "2026-10-29",
+        "slots": 1,
+        "morning": false,
+        "evening": true
+      },
+      {
+        "date": "2026-10-30",
+        "slots": 0,
+        "morning": false,
+        "evening": false
+      },
+      {
+        "date": "2026-10-31",
+        "slots": 0,
+        "morning": false,
+        "evening": false
+      },
+      {
+        "date": "2026-11-01",
+        "slots": 0,
+        "morning": false,
+        "evening": false
+      }
+    ]
+  },
+  "today": {
+    "evening": {
+      "done": true,
+      "title": "# 01｜With most votes counted, Israeli election reaches a stalemate",
+      "url": "packs/2026-10-29-evening.html"
+    }
+  },
+  "updated_at": "2026-10-29 21:01"
+}
