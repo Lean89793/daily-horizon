@@ -12,7 +12,7 @@ from . import extract, official, sources
 from .state import State
 from .util import CST, http_get, item_id, log, strip_tags, write_json
 
-MAX_AGE_HOURS = {"english": 96, "sector": 24 * 21}
+MAX_AGE_HOURS = {"english": 48, "sector": 48}  # 只收当天与前一天，保证时效
 
 
 def _local(tag: str) -> str:
@@ -150,10 +150,16 @@ def _pull(
         if not got:
             log(f"源返回 0 条（可能已改版或反爬）{feed['name']}", "WARN")
             continue
-        fresh = [
-            i for i in got
-            if not state.is_seen(i["id"]) and _age_ok(i, limit_hours, now) and not _blocked(i, english)
-        ]
+        fresh = []
+        for i in got:
+            if state.is_seen(i["id"]) or _blocked(i, english):
+                continue
+            # 时效：媒体源必须能确认发布时间且在窗口内；官方站列表页按新旧排序，允许无日期
+            if i.get("published_dt") is None and not i.get("gov"):
+                continue
+            if not _age_ok(i, limit_hours, now):
+                continue
+            fresh.append(i)
         log(f"  {feed['name']}: {len(got)} 条，可用 {len(fresh)} 条")
         pool.extend(fresh)
 
