@@ -5,7 +5,7 @@ from __future__ import annotations
 import html
 import re
 
-from . import mdhtml, sources
+from . import mdhtml, reader, sources
 from .util import fmt_hours, fmt_minutes
 
 SLOT_LABEL = {"morning": ("早场", "08:00"), "evening": ("晚场", "20:00")}
@@ -198,7 +198,7 @@ def to_email_html(pack: dict, week: dict, panel_url: str, mailbox_url: str, pack
       {panel_btn}{archive_btn}{mail_btn}
     </tr></table>
     <div style="font-size:11.5px;color:#A1A1A6;line-height:1.8;margin-top:18px;text-align:center;">
-      本邮件由 Daily Horizon 自动生成并发送 · 素材来源仅标注媒体名称，原文版权归原媒体所有<br>
+      本邮件由 Daily Horizon 自动生成并发送 · 素材均来自官方或权威渠道，每篇标注机构与原文链接，版权归原作者所有<br>
       生成时间 {pack.get('generated_at', '')}
     </div>
   </td></tr>
@@ -207,7 +207,9 @@ def to_email_html(pack: dict, week: dict, panel_url: str, mailbox_url: str, pack
 </body></html>"""
 
 
-def to_page_html(pack: dict, week: dict, panel_url: str) -> str:
-    """归档网页版：样式与邮件一致，但外壳更宽松，便于长文阅读。"""
-    email = to_email_html(pack, week, panel_url, "", "")
-    return email.replace("background:#F2F2F7;", "background:#F5F5F7;")
+def to_page_html(pack: dict, week: dict, panel_url: str, pack_id: str = "") -> str:
+    """归档网页版：样式与邮件一致，但注入阅读计时与位置记忆脚本。"""
+    page = to_email_html(pack, week, panel_url, "", "").replace("background:#F2F2F7;", "background:#F5F5F7;")
+    if pack_id:
+        page = page.replace("</body>", reader.script(pack_id) + "\n</body>")
+    return page
