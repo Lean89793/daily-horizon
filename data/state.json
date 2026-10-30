@@ -1,6 +1,124 @@
 {
- "version": 1,
- "seen": {},
- "days": {},
- "history": []
+  "version": 1,
+  "seen": {
+    "e2e9c7d97b73ee2a": {
+      "title": "Streeting denies 'kicking can down the road' in defence spending row",
+      "source": "BBC Business",
+      "date": "2026-10-30",
+      "slot": "evening",
+      "sector": "english"
+    },
+    "c3dab91be82f3da0": {
+      "title": "Crypto giant Binance hit by $6.3bn hack suspected to be largest in history",
+      "source": "BBC Business",
+      "date": "2026-10-30",
+      "slot": "evening",
+      "sector": "english"
+    },
+    "ea1929eb1670e3ea": {
+      "title": "中国人民银行行长潘功胜在2026金融街论坛年会上的主题演讲",
+      "source": "中国人民银行",
+      "date": "2026-10-30",
+      "slot": "evening",
+      "sector": "finance"
+    },
+    "d6d4e172d0e190ee": {
+      "title": "证监会就上市公司监管法规体系整合涉及相关规则公开征求意见",
+      "source": "中国证监会",
+      "date": "2026-10-30",
+      "slot": "evening",
+      "sector": "finance"
+    },
+    "0fa8b6cdadf34dd9": {
+      "title": "华尔街见闻早餐FM-Radio | 2026年10月30日",
+      "source": "华尔街见闻",
+      "date": "2026-10-30",
+      "slot": "evening",
+      "sector": "finance"
+    },
+    "818f424aba5d642c": {
+      "title": "全国民航10月25日起执行冬春航季航班计划",
+      "source": "中国民用航空局",
+      "date": "2026-10-30",
+      "slot": "evening",
+      "sector": "travel"
+    },
+    "6030f018492a8bcb": {
+      "title": "宋志勇在2026北外滩国际航运论坛作主...",
+      "source": "中国民用航空局",
+      "date": "2026-10-30",
+      "slot": "evening",
+      "sector": "travel"
+    },
+    "6090caa6005b1f38": {
+      "title": "上水岭南花园精品酒店焕新启幕",
+      "source": "品橙旅游",
+      "date": "2026-10-30",
+      "slot": "evening",
+      "sector": "travel"
+    },
+    "2b520612132a3da0": {
+      "title": "全国消费品以旧换新工作推进电视电话会议在京召开",
+      "source": "商务部·消费",
+      "date": "2026-10-30",
+      "slot": "evening",
+      "sector": "consumer"
+    },
+    "ec1f79c20d0289e0": {
+      "title": "中国家具协会第八次会员代表大会在北京胜利召开",
+      "source": "中国家具协会",
+      "date": "2026-10-30",
+      "slot": "evening",
+      "sector": "consumer"
+    },
+    "50fc5a493cc0b310": {
+      "title": "出海非洲：铁矿石与铝土矿如何影响中国原料供应链？",
+      "source": "钛媒体",
+      "date": "2026-10-30",
+      "slot": "evening",
+      "sector": "consumer"
+    }
+  },
+  "days": {
+    "2026-10-30": {
+      "evening": {
+        "status": "ok",
+        "generated_at": "2026-10-30 20:32",
+        "english_articles": 2,
+        "english_minutes": 60,
+        "sector_minutes": 90,
+        "english_title": "# 01｜Streeting denies 'kicking can down the road' in defence spending row",
+        "lead_title": "# 冬春航季换季叠加精品酒店开业：旅游产业链上下游正在发生什么",
+        "sectors": [
+          {
+            "key": "finance",
+            "title": "# 央行一天放出五招：从“救急钱”到“隔夜利率”，普通人该看懂哪几层",
+            "minutes": 30
+          },
+          {
+            "key": "travel",
+            "title": "# 冬春航季换季叠加精品酒店开业：旅游产业链上下游正在发生什么",
+            "minutes": 35
+          },
+          {
+            "key": "consumer",
+            "title": "# 以旧换新带动2万亿销售之后：家居餐具生意的政策红利与渠道变局",
+            "minutes": 25
+          }
+        ],
+        "pack_url": "packs/2026-10-30-evening.html",
+        "cost": "calls=4 tokens=14083+11546",
+        "sent": true,
+        "subject": "Progress Log｜每日精进 · Daily Learning Pack｜10/30 晚场"
+      }
+    }
+  },
+  "history": [
+    {
+      "key": "2026-10-30#evening",
+      "date": "2026-10-30",
+      "slot": "evening",
+      "status": "ok"
+    }
+  ]
 }

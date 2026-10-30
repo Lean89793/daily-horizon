@@ -3,18 +3,18 @@
     "week": "2026-W44",
     "week_start": "2026-10-26",
     "week_end": "2026-11-01",
-    "english_count": 0,
-    "english_minutes": 0,
-    "sector_count": 0,
-    "sector_minutes": 0,
-    "total_minutes": 0,
-    "slots_done": 0,
+    "english_count": 2,
+    "english_minutes": 60,
+    "sector_count": 3,
+    "sector_minutes": 90,
+    "total_minutes": 150,
+    "slots_done": 1,
     "slots_planned": 14,
-    "progress": 0.0,
+    "progress": 0.0714,
     "sectors": {
-      "finance": 0,
-      "travel": 0,
-      "consumer": 0
+      "finance": 1,
+      "travel": 1,
+      "consumer": 1
     },
     "daily": [
       {
@@ -43,9 +43,9 @@
       },
       {
         "date": "2026-10-30",
-        "slots": 0,
+        "slots": 1,
         "morning": false,
-        "evening": false
+        "evening": true
       },
       {
         "date": "2026-10-31",
@@ -61,6 +61,12 @@
       }
     ]
   },
-  "today": {},
-  "updated_at": "2026-10-30 17:46"
+  "today": {
+    "evening": {
+      "done": true,
+      "title": "# 01｜Streeting denies 'kicking can down the road' in defence spending row",
+      "url": "packs/2026-10-30-evening.html"
+    }
+  },
+  "updated_at": "2026-10-30 20:32"
 }
