@@ -56,7 +56,7 @@ def english_user(articles: list[dict], target_words: int, minutes: int) -> str:
 
 要求：
 - 总英文词数约 {target_words} 词（已有素材的原文长度即为准，不要为了凑字数增删内容）。
-- 整体建议阅读时长 {minutes} 分钟，请在 Est. 里按每篇实际词数给出合理分钟数。
+- 整体建议阅读时长 {minutes} 分钟；Est. 请按每篇实际词数折算（约 150 词/分钟），不要直接照抄 {minutes}。
 - 严格按骨架输出，两篇之间不要写分隔线以外的任何过渡语。"""
 
 
