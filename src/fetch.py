@@ -213,7 +213,12 @@ def collect_sector(sector: str, state: State, now: datetime, rng: random.Random,
         # 综合源里与板块无关的条目直接丢弃，避免旅游板块写进体育新闻
         if kws and item.get("general") and hits == 0:
             continue
-        body = extract.article_text(item["link"], max_words=1800)
+        if "news.google.com" in item["link"]:
+            # Google News 是跳板链接，正文抓不到（实测 full=0），摘要又只有三四十字的标题
+            # 直接按摘要处理，避免为上百条条目白白发起网络请求
+            body = ""
+        else:
+            body = extract.article_text(item["link"], max_words=1800)
         if len(body) >= 120:
             item["text_quality"] = "full"
         else:
