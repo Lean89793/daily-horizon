@@ -21,7 +21,7 @@ for i in items:
 
 from src.config import Config
 
-cfg = Config(root)
+cfg = Config()
 cli = llm.DeepSeek(cfg.llm_key, cfg.llm_base, cfg.llm_model, cfg.llm_temperature, cfg.llm_timeout)
 md = cli.chat(prompts.ENGLISH_SYSTEM, prompts.english_user(items, 780, 60), max_tokens=8000, temperature=0.55)
 merged = mdhtml.merge_translations(md)
