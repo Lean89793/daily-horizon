@@ -8,7 +8,7 @@ from datetime import datetime, timedelta
 from email.utils import parsedate_to_datetime
 from xml.etree import ElementTree as ET
 
-from . import extract, sources
+from . import extract, official, sources
 from .state import State
 from .util import CST, http_get, item_id, log, strip_tags, write_json
 
@@ -143,7 +143,10 @@ def _pull(
         except Exception as exc:  # noqa: BLE001
             log(f"源不可用 {feed['name']}: {str(exc)[:80]}", "WARN")
             continue
-        got = parse_feed(xml_text, feed)
+        if feed.get("kind") == "html":
+            got = official.parse_list(xml_text, feed)
+        else:
+            got = parse_feed(xml_text, feed)
         if not got:
             log(f"源返回 0 条（可能已改版或反爬）{feed['name']}", "WARN")
             continue
@@ -172,7 +175,8 @@ def _pull(
 
 # ------------------------------------------------------------------ 英语
 def collect_english(state: State, target_words: int, max_articles: int, now: datetime, rng: random.Random) -> list[dict]:
-    pool = _pull(sources.ENGLISH_FEEDS, MAX_AGE_HOURS["english"], state, now, rng, english=True)
+    feeds = official.GOV_FEEDS.get("english", []) + sources.ENGLISH_FEEDS
+    pool = _pull(feeds, MAX_AGE_HOURS["english"], state, now, rng, english=True)
     picked: list[dict] = []
     words = 0
 
@@ -195,13 +199,14 @@ def collect_english(state: State, target_words: int, max_articles: int, now: dat
 
 # ------------------------------------------------------------------ 行业
 def collect_sector(sector: str, state: State, now: datetime, rng: random.Random, want: int = 3) -> list[dict]:
-    feeds = sources.SECTOR_FEEDS.get(sector, [])
+    feeds = official.GOV_FEEDS.get(sector, []) + sources.SECTOR_FEEDS.get(sector, [])
     pool = _pull(feeds, MAX_AGE_HOURS["sector"], state, now, rng)
 
     # 综合源（如界面新闻）会把体育娱乐混进来，按板块关键词优先排序
     kws = sources.SECTOR_KEYWORDS.get(sector, [])
-    if kws:
-        pool.sort(key=lambda i: -sum(1 for k in kws if k in f"{i['title']} {i['summary']}"))
+    # 官方源优先进入抽正文队列（否则关键词排序会把部委通稿挤到 9 条上限之外）
+    pool.sort(key=lambda i: (0 if i.get("gov") else 1,
+                             -sum(1 for k in kws if k in f"{i['title']} {i['summary']}")))
 
     picked: list[dict] = []
     solid: list[dict] = []
@@ -212,6 +217,9 @@ def collect_sector(sector: str, state: State, now: datetime, rng: random.Random,
         hits = sum(1 for k in kws if k in blob) if kws else 1
         # 综合源里与板块无关的条目直接丢弃，避免旅游板块写进体育新闻
         if kws and item.get("general") and hits == 0:
+            continue
+        # 官方条目最多解析 3 篇，避免把扫描预算全吃光、媒体内容补不进来
+        if item.get("gov") and sum(1 for p in solid if p.get("gov")) >= 3:
             continue
         if "news.google.com" in item["link"]:
             # Google News 是跳板链接，正文抓不到（实测 full=0），摘要又只有三四十字的标题
@@ -224,7 +232,8 @@ def collect_sector(sector: str, state: State, now: datetime, rng: random.Random,
         else:
             # 正文抓不到时退回摘要，但摘要本身必须够长，否则等于只有标题
             summary = (item.get("summary") or "").strip()
-            if len(summary) < 150:
+            # 政府通稿天然短（百余字），门槛放低，否则部委口径永远进不来
+            if len(summary) < (90 if item.get("gov") else 150):
                 continue
             body = summary
             item["text_quality"] = "summary"
@@ -235,14 +244,19 @@ def collect_sector(sector: str, state: State, now: datetime, rng: random.Random,
         (solid if item["text_quality"] == "full" else thin).append(item)
 
         # 央媒短讯多，单篇只有几百字，凑够可读体量再多取几篇
-        if len(solid) >= want and sum(p["chars"] for p in solid) >= 1200:
+        # 同时要求至少 2 篇非官方媒体，避免一个板块全是部委通稿
+        media_ok = sum(1 for p in solid if not p.get("gov")) >= 2
+        if len(solid) >= want and sum(p["chars"] for p in solid) >= 1200 and media_ok:
             break
-        if len(solid) + len(thin) >= want * 3:
+        if len(solid) + len(thin) >= want * 4:
             break
 
-    picked = solid[:want]
-    if len(picked) < want:
-        picked.extend(thin[: want - len(picked)])
+    # 官方口径最多 2 篇（保证权威），其余用信息量最大的媒体内容补齐
+    cand = sorted(solid, key=lambda x: -x["chars"]) + sorted(thin, key=lambda x: -x["chars"])
+    gov = [i for i in cand if i.get("gov")][:2]
+    media = [i for i in cand if not i.get("gov")]
+    picked = gov + media[: max(0, want - len(gov))]
+    picked.sort(key=lambda x: (0 if x.get("gov") else 1, -x["chars"]))
 
     log(f"{sector} 素材：{len(picked)} 篇 / {sum(p.get('chars', 0) for p in picked)} 字"
         f"（全文 {len(solid)} / 摘要 {len(thin)}）")
