@@ -3,18 +3,18 @@
     "week": "2026-W44",
     "week_start": "2026-10-26",
     "week_end": "2026-11-01",
-    "english_count": 4,
-    "english_minutes": 120,
-    "sector_count": 6,
-    "sector_minutes": 180,
-    "total_minutes": 300,
-    "slots_done": 2,
+    "english_count": 7,
+    "english_minutes": 180,
+    "sector_count": 9,
+    "sector_minutes": 270,
+    "total_minutes": 450,
+    "slots_done": 3,
     "slots_planned": 14,
-    "progress": 0.1429,
+    "progress": 0.2143,
     "sectors": {
-      "finance": 2,
-      "travel": 2,
-      "consumer": 2
+      "finance": 3,
+      "travel": 3,
+      "consumer": 3
     },
     "daily": [
       {
@@ -49,9 +49,9 @@
       },
       {
         "date": "2026-10-31",
-        "slots": 1,
+        "slots": 2,
         "morning": true,
-        "evening": false
+        "evening": true
       },
       {
         "date": "2026-11-01",
@@ -66,7 +66,12 @@
       "done": true,
       "title": "# 01｜US tech stocks see sharp falls as AI spending nears $1tn",
       "url": "packs/2026-10-31-morning.html"
+    },
+    "evening": {
+      "done": true,
+      "title": "# 01｜Global Review concludes with a declaration on partnerships for trade and development",
+      "url": "packs/2026-10-31-evening.html"
     }
   },
-  "updated_at": "2026-10-31 08:32"
+  "updated_at": "2026-10-31 20:29"
 }

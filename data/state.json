@@ -154,6 +154,90 @@
       "date": "2026-10-31",
       "slot": "morning",
       "sector": "consumer"
+    },
+    "00843ece7049bee0": {
+      "title": "Global Review concludes with a declaration on partnerships for trade and development",
+      "source": "WTO News",
+      "date": "2026-10-31",
+      "slot": "evening",
+      "sector": "english"
+    },
+    "a23d133256430605": {
+      "title": "The South West reacts to Budget announcements",
+      "source": "BBC Business",
+      "date": "2026-10-31",
+      "slot": "evening",
+      "sector": "english"
+    },
+    "c72136d7d94a7a29": {
+      "title": "US interest rates held steady and economy grows - what it means for you",
+      "source": "BBC Business",
+      "date": "2026-10-31",
+      "slot": "evening",
+      "sector": "english"
+    },
+    "e2e3da75ea999783": {
+      "title": "《中国与欧亚经济联盟经贸合作协定》联委会第六次会议在青岛召开",
+      "source": "商务部",
+      "date": "2026-10-31",
+      "slot": "evening",
+      "sector": "finance"
+    },
+    "0ed4addbd37dfdd7": {
+      "title": "瑞士联邦主席兼经济、教研部长帕姆兰率经济界代表团到访商务部",
+      "source": "商务部",
+      "date": "2026-10-31",
+      "slot": "evening",
+      "sector": "finance"
+    },
+    "070fe14e9b0120e1": {
+      "title": "当前AI最紧迫的瓶颈：廉价资金正在枯竭！",
+      "source": "华尔街见闻",
+      "date": "2026-10-31",
+      "slot": "evening",
+      "sector": "finance"
+    },
+    "89821868dd65bee5": {
+      "title": "商业头条NO.149 | 在欧洲，再造一个比亚迪",
+      "source": "界面新闻",
+      "date": "2026-10-31",
+      "slot": "evening",
+      "sector": "consumer"
+    },
+    "289c9b9e73aa9045": {
+      "title": "美国专业跑步品牌 BROOKS 前九个月全球营收同比增长12%，亚太市场增长9%",
+      "source": "华丽志",
+      "date": "2026-10-31",
+      "slot": "evening",
+      "sector": "consumer"
+    },
+    "5b10031fb7767389": {
+      "title": "全球风电订单持续膨胀，金风三季报却卡在交付， 风电出海的新门槛正压向配套产业链企业",
+      "source": "钛媒体",
+      "date": "2026-10-31",
+      "slot": "evening",
+      "sector": "consumer"
+    },
+    "98b9a140f93f6a47": {
+      "title": "南航2026年冬春航季新开加密多条国际航线",
+      "source": "品橙旅游",
+      "date": "2026-10-31",
+      "slot": "evening",
+      "sector": "travel"
+    },
+    "31d2c3ee0e8a042f": {
+      "title": "欧洲将迎来“史上最大幅度机票涨价”",
+      "source": "品橙旅游",
+      "date": "2026-10-31",
+      "slot": "evening",
+      "sector": "travel"
+    },
+    "e1a1a29ab3a08448": {
+      "title": "全旅达推出ConnexUS：重新定义差旅管理",
+      "source": "品橙旅游",
+      "date": "2026-10-31",
+      "slot": "evening",
+      "sector": "travel"
     }
   },
   "days": {
@@ -219,6 +303,36 @@
         "cost": "calls=4 tokens=10070+10511",
         "sent": true,
         "subject": "Progress Log｜每日精进 · Daily Learning Pack｜10/31 早场"
+      },
+      "evening": {
+        "status": "ok",
+        "generated_at": "2026-10-31 20:29",
+        "english_articles": 3,
+        "english_minutes": 60,
+        "sector_minutes": 90,
+        "english_title": "# 01｜Global Review concludes with a declaration on partnerships for trade and development",
+        "lead_title": "# 比亚迪欧洲五年：从展厅缺货到匈牙利工厂爬坡，出海生意进入“最难的部分”",
+        "sectors": [
+          {
+            "key": "finance",
+            "title": "# 中瑞、中欧亚两场经贸会谈同期举行，而 AI 行业的钱正在变贵",
+            "minutes": 30
+          },
+          {
+            "key": "consumer",
+            "title": "# 比亚迪欧洲五年：从展厅缺货到匈牙利工厂爬坡，出海生意进入“最难的部分”",
+            "minutes": 35
+          },
+          {
+            "key": "travel",
+            "title": "# 南航冬春航季加密国际航线、欧洲机票预警涨价10%–20%：航空运力与票价如何沿旅游产业链传导",
+            "minutes": 25
+          }
+        ],
+        "pack_url": "packs/2026-10-31-evening.html",
+        "cost": "calls=4 tokens=14107+13281",
+        "sent": true,
+        "subject": "Progress Log｜每日精进 · Daily Learning Pack｜10/31 晚场"
       }
     }
   },
@@ -233,6 +347,12 @@
       "key": "2026-10-31#morning",
       "date": "2026-10-31",
       "slot": "morning",
+      "status": "ok"
+    },
+    {
+      "key": "2026-10-31#evening",
+      "date": "2026-10-31",
+      "slot": "evening",
       "status": "ok"
     }
   ]
