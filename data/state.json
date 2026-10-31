@@ -77,6 +77,83 @@
       "date": "2026-10-30",
       "slot": "evening",
       "sector": "consumer"
+    },
+    "5ebb287190dac9a8": {
+      "title": "US tech stocks see sharp falls as AI spending nears $1tn",
+      "source": "BBC Business",
+      "date": "2026-10-31",
+      "slot": "morning",
+      "sector": "english"
+    },
+    "f85debbbded3a52b": {
+      "title": "How Poundland grew from a market stall to a high street giant",
+      "source": "BBC Business",
+      "date": "2026-10-31",
+      "slot": "morning",
+      "sector": "english"
+    },
+    "0d1efa781ea025c2": {
+      "title": "中国证监会原发审委委员、上海证券交易所原科创板上市审核中心副主任操舰严重违纪违法被开除党籍和公职",
+      "source": "中国证监会",
+      "date": "2026-10-31",
+      "slot": "morning",
+      "sector": "finance"
+    },
+    "ae2ba110f6ad27f3": {
+      "title": "中智（利）两国央行续签双边本币互换协议",
+      "source": "中国人民银行",
+      "date": "2026-10-31",
+      "slot": "morning",
+      "sector": "finance"
+    },
+    "c15d68b986707f91": {
+      "title": "学界业界专家在沪探讨存量时代城市更新可持续路径",
+      "source": "中新财经",
+      "date": "2026-10-31",
+      "slot": "morning",
+      "sector": "finance"
+    },
+    "fa5ed1704b50f385": {
+      "title": "一条旅游公路，串起太行深山“红叶经济”",
+      "source": "品橙旅游",
+      "date": "2026-10-31",
+      "slot": "morning",
+      "sector": "travel"
+    },
+    "353b4432cde7ad5a": {
+      "title": "法国航空庆祝巴黎至香港航线开通88周年",
+      "source": "品橙旅游",
+      "date": "2026-10-31",
+      "slot": "morning",
+      "sector": "travel"
+    },
+    "8c1c244ecff0211b": {
+      "title": "同程旅行×沈阳机场趣味活动解锁东北新体验",
+      "source": "品橙旅游",
+      "date": "2026-10-31",
+      "slot": "morning",
+      "sector": "travel"
+    },
+    "74529ff322f07272": {
+      "title": "以物会心 无问西东——中国家具品牌闪耀世界设计与创意之都“伦敦”",
+      "source": "中国家具协会",
+      "date": "2026-10-31",
+      "slot": "morning",
+      "sector": "consumer"
+    },
+    "03c363b76ca84646": {
+      "title": "代谢创新药进入“中国时间”：从产品出海到能力出海的行业跃迁丨行业风向标",
+      "source": "钛媒体",
+      "date": "2026-10-31",
+      "slot": "morning",
+      "sector": "consumer"
+    },
+    "e9383bf14f6ffe76": {
+      "title": "意大利奢侈内衣品牌 La Perla 多年的掌门人、创始人之子 Alberto Masotti 去世，享年90岁",
+      "source": "华丽志",
+      "date": "2026-10-31",
+      "slot": "morning",
+      "sector": "consumer"
     }
   },
   "days": {
@@ -111,6 +188,38 @@
         "sent": true,
         "subject": "Progress Log｜每日精进 · Daily Learning Pack｜10/30 晚场"
       }
+    },
+    "2026-10-31": {
+      "morning": {
+        "status": "ok",
+        "generated_at": "2026-10-31 08:32",
+        "english_articles": 2,
+        "english_minutes": 60,
+        "sector_minutes": 90,
+        "english_title": "# 01｜US tech stocks see sharp falls as AI spending nears $1tn",
+        "lead_title": "# 太行山一条11公里环线，如何把“看半天红叶”变成“住一晚过周末”：一条旅游公路改写上游目的地供给",
+        "sectors": [
+          {
+            "key": "finance",
+            "title": "# 发审委委员被“双开”与智利本币互换续签：一条监管线、一条资金线，读懂中国金融的两个切面",
+            "minutes": 30
+          },
+          {
+            "key": "travel",
+            "title": "# 太行山一条11公里环线，如何把“看半天红叶”变成“住一晚过周末”：一条旅游公路改写上游目的地供给",
+            "minutes": 35
+          },
+          {
+            "key": "consumer",
+            "title": "# 一把香几与一条内衣：两个\"手艺生意\"的百年分野",
+            "minutes": 25
+          }
+        ],
+        "pack_url": "packs/2026-10-31-morning.html",
+        "cost": "calls=4 tokens=10070+10511",
+        "sent": true,
+        "subject": "Progress Log｜每日精进 · Daily Learning Pack｜10/31 早场"
+      }
     }
   },
   "history": [
@@ -118,6 +227,12 @@
       "key": "2026-10-30#evening",
       "date": "2026-10-30",
       "slot": "evening",
+      "status": "ok"
+    },
+    {
+      "key": "2026-10-31#morning",
+      "date": "2026-10-31",
+      "slot": "morning",
       "status": "ok"
     }
   ]
