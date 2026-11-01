@@ -238,6 +238,90 @@
       "date": "2026-10-31",
       "slot": "evening",
       "sector": "travel"
+    },
+    "3bebc0c418946958": {
+      "title": "China, Switzerland sign protocol to upgrade free trade agreement",
+      "source": "Gov.cn English",
+      "date": "2026-11-01",
+      "slot": "morning",
+      "sector": "english"
+    },
+    "101bf5c8c1fe81c1": {
+      "title": "Chinese FM holds talks with Icelandic foreign minister",
+      "source": "Gov.cn English",
+      "date": "2026-11-01",
+      "slot": "morning",
+      "sector": "english"
+    },
+    "7488668b82e69cb9": {
+      "title": "Peng Liyuan chats over tea with wife of German president",
+      "source": "Gov.cn English",
+      "date": "2026-11-01",
+      "slot": "morning",
+      "sector": "english"
+    },
+    "b7ae274d9f8931e2": {
+      "title": "独家专访 | 蒂芙尼首席宝石学家揭秘：如何成为高珠界的“宝石星探”？",
+      "source": "华丽志",
+      "date": "2026-11-01",
+      "slot": "morning",
+      "sector": "consumer"
+    },
+    "df376e3382969a3b": {
+      "title": "亚太区表现出色，眼镜巨头依视路陆逊梯卡三季度全球营收同比增长9%",
+      "source": "华丽志",
+      "date": "2026-11-01",
+      "slot": "morning",
+      "sector": "consumer"
+    },
+    "39ad6b7c007179b7": {
+      "title": "二十国集团外长会未就地缘和经济安全问题达成共识",
+      "source": "界面新闻",
+      "date": "2026-11-01",
+      "slot": "morning",
+      "sector": "consumer"
+    },
+    "00a2559ac26d51d0": {
+      "title": "演艺活力浸润全城 武汉聚力打造“演艺名城”",
+      "source": "品橙旅游",
+      "date": "2026-11-01",
+      "slot": "morning",
+      "sector": "travel"
+    },
+    "db70f7790cbd50ce": {
+      "title": "碧旅阁林全球可持续酒店版图再拓新章",
+      "source": "品橙旅游",
+      "date": "2026-11-01",
+      "slot": "morning",
+      "sector": "travel"
+    },
+    "605173a75564121f": {
+      "title": "前三季度深圳机场净利润接近翻倍",
+      "source": "品橙旅游",
+      "date": "2026-11-01",
+      "slot": "morning",
+      "sector": "travel"
+    },
+    "cc757550dedc8fdc": {
+      "title": "2026年10月中国采购经理指数运行情况",
+      "source": "国家统计局",
+      "date": "2026-11-01",
+      "slot": "morning",
+      "sector": "finance"
+    },
+    "a02eabf97ea3faf9": {
+      "title": "李强主持召开国务院常务会议 研究统筹人口与经济社会发展有关工作 听取推进全国服务业大会部署落实情况汇报",
+      "source": "商务部",
+      "date": "2026-11-01",
+      "slot": "morning",
+      "sector": "finance"
+    },
+    "981f093188b71655": {
+      "title": "“黑色星期五”的导火索：Anthropic只能“垃圾级”？",
+      "source": "华尔街见闻",
+      "date": "2026-11-01",
+      "slot": "morning",
+      "sector": "finance"
     }
   },
   "days": {
@@ -334,6 +418,38 @@
         "sent": true,
         "subject": "Progress Log｜每日精进 · Daily Learning Pack｜10/31 晚场"
       }
+    },
+    "2026-11-01": {
+      "morning": {
+        "status": "ok",
+        "generated_at": "2026-11-01 08:31",
+        "english_articles": 3,
+        "english_minutes": 60,
+        "sector_minutes": 90,
+        "english_title": "# 01｜China, Switzerland sign protocol to upgrade free trade agreement",
+        "lead_title": "# 蒂芙尼首席宝石学家谈彩钻采购与高级珠宝消费变化，依视路陆逊梯卡三季度亚太营收增19.1%",
+        "sectors": [
+          {
+            "key": "consumer",
+            "title": "# 蒂芙尼首席宝石学家谈彩钻采购与高级珠宝消费变化，依视路陆逊梯卡三季度亚太营收增19.1%",
+            "minutes": 35
+          },
+          {
+            "key": "travel",
+            "title": "# 武汉一年四万场演出、深圳机场净利近翻倍：旅游产业链上，谁在靠“内容”赚钱",
+            "minutes": 25
+          },
+          {
+            "key": "finance",
+            "title": "# 10月PMI跌回荣枯线下、服务业政策加码、Anthropic拿不到投资级评级：三件事其实在讲同一个词——\"钱的门槛\"",
+            "minutes": 30
+          }
+        ],
+        "pack_url": "packs/2026-11-01-morning.html",
+        "cost": "calls=4 tokens=14699+11237",
+        "sent": true,
+        "subject": "Progress Log｜每日精进 · Daily Learning Pack｜11/01 早场"
+      }
     }
   },
   "history": [
@@ -353,6 +469,12 @@
       "key": "2026-10-31#evening",
       "date": "2026-10-31",
       "slot": "evening",
+      "status": "ok"
+    },
+    {
+      "key": "2026-11-01#morning",
+      "date": "2026-11-01",
+      "slot": "morning",
       "status": "ok"
     }
   ]
