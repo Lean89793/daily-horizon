@@ -322,6 +322,62 @@
       "date": "2026-11-01",
       "slot": "morning",
       "sector": "finance"
+    },
+    "31d1f5465fb7b2b8": {
+      "title": "Energy bills help 'doesn't go far enough'",
+      "source": "BBC Business",
+      "date": "2026-11-01",
+      "slot": "evening",
+      "sector": "english"
+    },
+    "dbe77c398288781f": {
+      "title": "These firms you've never heard of are feeding fears the AI bubble could burst",
+      "source": "BBC World",
+      "date": "2026-11-01",
+      "slot": "evening",
+      "sector": "english"
+    },
+    "1eb26df1d1af01c8": {
+      "title": "上年销售增长29％，英国轻奢女装品牌 ME+EM 获私募基金股东追加投资",
+      "source": "华丽志",
+      "date": "2026-11-01",
+      "slot": "evening",
+      "sector": "consumer"
+    },
+    "10b7dfa73fec7816": {
+      "title": "意大利老牌礼帽公司 Borsalino 跨界“香氛”，操盘手细说战略",
+      "source": "华丽志",
+      "date": "2026-11-01",
+      "slot": "evening",
+      "sector": "consumer"
+    },
+    "299ab4a153d7bd21": {
+      "title": "英国户外零售家族企业 Regatta 2025财年营收增长7.5%至3.21亿英镑",
+      "source": "华丽志",
+      "date": "2026-11-01",
+      "slot": "evening",
+      "sector": "consumer"
+    },
+    "30ab17657ebe89da": {
+      "title": "习近平：在纪念中国工农红军长征胜利90周年大会上的讲话",
+      "source": "商务部",
+      "date": "2026-11-01",
+      "slot": "evening",
+      "sector": "finance"
+    },
+    "b039917c98732ddc": {
+      "title": "商务部等4部门印发关于进一步提高海南自由贸易港贸易自由化便利化水平的通知",
+      "source": "商务部",
+      "date": "2026-11-01",
+      "slot": "evening",
+      "sector": "finance"
+    },
+    "b65e0d36d2e2bc18": {
+      "title": "下周重磅日程：聚焦美国中选与中国重磅金融会议，非农、AMD和苹果财报齐至",
+      "source": "华尔街见闻",
+      "date": "2026-11-01",
+      "slot": "evening",
+      "sector": "finance"
     }
   },
   "days": {
@@ -449,6 +505,31 @@
         "cost": "calls=4 tokens=14699+11237",
         "sent": true,
         "subject": "Progress Log｜每日精进 · Daily Learning Pack｜11/01 早场"
+      },
+      "evening": {
+        "status": "ok",
+        "generated_at": "2026-11-01 20:30",
+        "english_articles": 2,
+        "english_minutes": 60,
+        "sector_minutes": 90,
+        "english_title": "# 01｜Energy bills help 'doesn't go far enough'",
+        "lead_title": "",
+        "sectors": [
+          {
+            "key": "consumer",
+            "title": "# ME+EM 上财年营收增至 1.9 亿英镑：一个轻奢品牌把“省掉中间商”做成了增长引擎",
+            "minutes": 40
+          },
+          {
+            "key": "finance",
+            "title": "# 海南自贸港再出16项贸易便利化措施，叠加全球“超级央行周”与AI财报季：钱往哪流、风险在哪",
+            "minutes": 50
+          }
+        ],
+        "pack_url": "packs/2026-11-01-evening.html",
+        "cost": "calls=3 tokens=8416+8863",
+        "sent": true,
+        "subject": "Progress Log｜每日精进 · Daily Learning Pack｜11/01 晚场"
       }
     }
   },
@@ -475,6 +556,12 @@
       "key": "2026-11-01#morning",
       "date": "2026-11-01",
       "slot": "morning",
+      "status": "ok"
+    },
+    {
+      "key": "2026-11-01#evening",
+      "date": "2026-11-01",
+      "slot": "evening",
       "status": "ok"
     }
   ]

@@ -3,18 +3,18 @@
     "week": "2026-W44",
     "week_start": "2026-10-26",
     "week_end": "2026-11-01",
-    "english_count": 10,
-    "english_minutes": 240,
-    "sector_count": 12,
-    "sector_minutes": 360,
-    "total_minutes": 600,
-    "slots_done": 4,
+    "english_count": 12,
+    "english_minutes": 300,
+    "sector_count": 14,
+    "sector_minutes": 450,
+    "total_minutes": 750,
+    "slots_done": 5,
     "slots_planned": 14,
-    "progress": 0.2857,
+    "progress": 0.3571,
     "sectors": {
-      "finance": 4,
+      "finance": 5,
       "travel": 4,
-      "consumer": 4
+      "consumer": 5
     },
     "daily": [
       {
@@ -55,9 +55,9 @@
       },
       {
         "date": "2026-11-01",
-        "slots": 1,
+        "slots": 2,
         "morning": true,
-        "evening": false
+        "evening": true
       }
     ]
   },
@@ -66,7 +66,12 @@
       "done": true,
       "title": "# 01｜China, Switzerland sign protocol to upgrade free trade agreement",
       "url": "packs/2026-11-01-morning.html"
+    },
+    "evening": {
+      "done": true,
+      "title": "# 01｜Energy bills help 'doesn't go far enough'",
+      "url": "packs/2026-11-01-evening.html"
     }
   },
-  "updated_at": "2026-11-01 08:31"
+  "updated_at": "2026-11-01 20:30"
 }
