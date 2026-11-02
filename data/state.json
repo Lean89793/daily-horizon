@@ -441,6 +441,90 @@
       "date": "2026-11-02",
       "slot": "morning",
       "sector": "finance"
+    },
+    "2f6090401f705cef": {
+      "title": "Supermarket freezers in Belgium, Sweden and Luxembourg hit by suspected cyber-attack",
+      "source": "BBC Business",
+      "date": "2026-11-02",
+      "slot": "evening",
+      "sector": "english"
+    },
+    "80b54275a4fbadb8": {
+      "title": "Chinese vice premier urges strengthening advanced manufacturing",
+      "source": "Gov.cn English",
+      "date": "2026-11-02",
+      "slot": "evening",
+      "sector": "english"
+    },
+    "e38c9efddd4c3589": {
+      "title": "Crypto ‘scammers on overdrive’ as Binance customers pull billions from accounts after $6.3bn hack – business live",
+      "source": "The Guardian Business",
+      "date": "2026-11-02",
+      "slot": "evening",
+      "sector": "english"
+    },
+    "209bec040185160d": {
+      "title": "耐克收回线上授权，滔搏的生意不能只靠大牌",
+      "source": "钛媒体",
+      "date": "2026-11-02",
+      "slot": "evening",
+      "sector": "consumer"
+    },
+    "356c3cfdcbea9a2a": {
+      "title": "欧盟禁止时尚和奢侈品品牌“销毁”滞销商品，能否真正落实？",
+      "source": "华丽志",
+      "date": "2026-11-02",
+      "slot": "evening",
+      "sector": "consumer"
+    },
+    "1f4f568c1059da73": {
+      "title": "蒂芙尼宣布阿曼达·塞弗里德出任品牌代言人",
+      "source": "华丽志",
+      "date": "2026-11-02",
+      "slot": "evening",
+      "sector": "consumer"
+    },
+    "76f495a1c2f58e01": {
+      "title": "《民航绿色发展“十五五”实施方案》印发",
+      "source": "中国民用航空局",
+      "date": "2026-11-02",
+      "slot": "evening",
+      "sector": "travel"
+    },
+    "43b15b1bd82b9e5b": {
+      "title": "银河度假、大麦娱乐、飞猪达成三方战略合作",
+      "source": "品橙旅游",
+      "date": "2026-11-02",
+      "slot": "evening",
+      "sector": "travel"
+    },
+    "88aa7e8d051f22c0": {
+      "title": "品橙旅游：2026年第45周在线旅游精品解读",
+      "source": "品橙旅游",
+      "date": "2026-11-02",
+      "slot": "evening",
+      "sector": "travel"
+    },
+    "5f43a3f2ef0ab444": {
+      "title": "证券期货行政执法当事人承诺制度实施办法",
+      "source": "中国证监会",
+      "date": "2026-11-02",
+      "slot": "evening",
+      "sector": "finance"
+    },
+    "7eceebed8cf6ee90": {
+      "title": "证监会同意开展证券公司账户管理功能优化试点",
+      "source": "中国证监会",
+      "date": "2026-11-02",
+      "slot": "evening",
+      "sector": "finance"
+    },
+    "dae235fc1ff8c6c6": {
+      "title": "央行：股票回购增持再贷款政策由阶段性安排转为长期制度性安排，再贷款利率由1.25%降至1%",
+      "source": "界面新闻",
+      "date": "2026-11-02",
+      "slot": "evening",
+      "sector": "finance"
     }
   },
   "days": {
@@ -620,6 +704,36 @@
         "cost": "calls=3 tokens=12633+9446",
         "sent": true,
         "subject": "Progress Log｜每日精进 · Daily Learning Pack｜11/02 早场"
+      },
+      "evening": {
+        "status": "ok",
+        "generated_at": "2026-11-02 20:46",
+        "english_articles": 3,
+        "english_minutes": 60,
+        "sector_minutes": 90,
+        "english_title": "# 01｜Supermarket freezers in Belgium, Sweden and Luxembourg hit by suspected cyber-attack",
+        "lead_title": "# 滔搏失去耐克线上授权：运动零售商的“货架”还能自己说了算吗",
+        "sectors": [
+          {
+            "key": "consumer",
+            "title": "# 滔搏失去耐克线上授权：运动零售商的“货架”还能自己说了算吗",
+            "minutes": 35
+          },
+          {
+            "key": "travel",
+            "title": "# 民航“十五五”绿色方案定下两个降碳数字，澳门“演艺+旅游”三方签约打通票务与住宿",
+            "minutes": 25
+          },
+          {
+            "key": "finance",
+            "title": "# 证监会三项动作同时落地：当事人承诺制、账户优化试点、股票回购增持再贷款降息",
+            "minutes": 30
+          }
+        ],
+        "pack_url": "packs/2026-11-02-evening.html",
+        "cost": "calls=5 tokens=13920+11369",
+        "sent": true,
+        "subject": "Progress Log｜每日精进 · Daily Learning Pack｜11/02 晚场"
       }
     }
   },
@@ -658,6 +772,12 @@
       "key": "2026-11-02#morning",
       "date": "2026-11-02",
       "slot": "morning",
+      "status": "ok"
+    },
+    {
+      "key": "2026-11-02#evening",
+      "date": "2026-11-02",
+      "slot": "evening",
       "status": "ok"
     }
   ]
