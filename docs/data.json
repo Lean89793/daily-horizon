@@ -1,77 +1,72 @@
 {
   "week": {
-    "week": "2026-W44",
-    "week_start": "2026-10-26",
-    "week_end": "2026-11-01",
-    "english_count": 12,
-    "english_minutes": 300,
-    "sector_count": 14,
-    "sector_minutes": 450,
-    "total_minutes": 750,
-    "slots_done": 5,
+    "week": "2026-W45",
+    "week_start": "2026-11-02",
+    "week_end": "2026-11-08",
+    "english_count": 3,
+    "english_minutes": 60,
+    "sector_count": 2,
+    "sector_minutes": 90,
+    "total_minutes": 150,
+    "slots_done": 1,
     "slots_planned": 14,
-    "progress": 0.3571,
+    "progress": 0.0714,
     "sectors": {
-      "finance": 5,
-      "travel": 4,
-      "consumer": 5
+      "finance": 1,
+      "travel": 0,
+      "consumer": 1
     },
     "daily": [
       {
-        "date": "2026-10-26",
-        "slots": 0,
-        "morning": false,
-        "evening": false
-      },
-      {
-        "date": "2026-10-27",
-        "slots": 0,
-        "morning": false,
-        "evening": false
-      },
-      {
-        "date": "2026-10-28",
-        "slots": 0,
-        "morning": false,
-        "evening": false
-      },
-      {
-        "date": "2026-10-29",
-        "slots": 0,
-        "morning": false,
-        "evening": false
-      },
-      {
-        "date": "2026-10-30",
+        "date": "2026-11-02",
         "slots": 1,
+        "morning": true,
+        "evening": false
+      },
+      {
+        "date": "2026-11-03",
+        "slots": 0,
         "morning": false,
-        "evening": true
+        "evening": false
       },
       {
-        "date": "2026-10-31",
-        "slots": 2,
-        "morning": true,
-        "evening": true
+        "date": "2026-11-04",
+        "slots": 0,
+        "morning": false,
+        "evening": false
       },
       {
-        "date": "2026-11-01",
-        "slots": 2,
-        "morning": true,
-        "evening": true
+        "date": "2026-11-05",
+        "slots": 0,
+        "morning": false,
+        "evening": false
+      },
+      {
+        "date": "2026-11-06",
+        "slots": 0,
+        "morning": false,
+        "evening": false
+      },
+      {
+        "date": "2026-11-07",
+        "slots": 0,
+        "morning": false,
+        "evening": false
+      },
+      {
+        "date": "2026-11-08",
+        "slots": 0,
+        "morning": false,
+        "evening": false
       }
     ]
   },
   "today": {
     "morning": {
       "done": true,
-      "title": "# 01｜China, Switzerland sign protocol to upgrade free trade agreement",
-      "url": "packs/2026-11-01-morning.html"
-    },
-    "evening": {
-      "done": true,
-      "title": "# 01｜Energy bills help 'doesn't go far enough'",
-      "url": "packs/2026-11-01-evening.html"
+      "title": "# 01｜Ethiopian PM puts ministers through military training",
+      "url": "packs/2026-11-02-morning.html"
     }
   },
-  "updated_at": "2026-11-01 20:30"
+  "updated_at": "2026-11-02 08:32"
 }

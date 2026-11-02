@@ -378,6 +378,69 @@
       "date": "2026-11-01",
       "slot": "evening",
       "sector": "finance"
+    },
+    "e39c70b11991341a": {
+      "title": "Ethiopian PM puts ministers through military training",
+      "source": "BBC World",
+      "date": "2026-11-02",
+      "slot": "morning",
+      "sector": "english"
+    },
+    "489ef2f53b51fb7e": {
+      "title": "The fight to save Canadian town threatened by Trump's tariffs",
+      "source": "BBC World",
+      "date": "2026-11-02",
+      "slot": "morning",
+      "sector": "english"
+    },
+    "9fe27a42b7eccf77": {
+      "title": "Police deployed during stand-off over control of top Poland court",
+      "source": "BBC World",
+      "date": "2026-11-02",
+      "slot": "morning",
+      "sector": "english"
+    },
+    "8de13013a0bababc": {
+      "title": "南十字星下的中国能源军团：All-Energy Australia 2026 背后的光储棋局",
+      "source": "钛媒体",
+      "date": "2026-11-02",
+      "slot": "morning",
+      "sector": "consumer"
+    },
+    "ee270622fa552787": {
+      "title": "超跑精工×运动美学：FILA GOLF 与布加迪巅峰相见",
+      "source": "华丽志",
+      "date": "2026-11-02",
+      "slot": "morning",
+      "sector": "consumer"
+    },
+    "889bafd2a170e8ac": {
+      "title": "联合利华最新季报：营业额同比增长6.7%至132.71亿欧元，中国市场实现低个位数增长",
+      "source": "华丽志",
+      "date": "2026-11-02",
+      "slot": "morning",
+      "sector": "consumer"
+    },
+    "8376d081235ad7d9": {
+      "title": "证监会就《证券期货行政执法当事人承诺制度实施规定（征求意见稿）》公开征求意见",
+      "source": "中国证监会",
+      "date": "2026-11-02",
+      "slot": "morning",
+      "sector": "finance"
+    },
+    "6c85415cd2af243d": {
+      "title": "李克强签署国务院令 公布《证券期货行政执法当事人承诺制度实施办法》",
+      "source": "中国证监会",
+      "date": "2026-11-02",
+      "slot": "morning",
+      "sector": "finance"
+    },
+    "d175936d8df1a2d0": {
+      "title": "本周重磅日程：聚焦美国中选与中国重磅金融会议，非农、AMD和苹果财报齐至",
+      "source": "华尔街见闻",
+      "date": "2026-11-02",
+      "slot": "morning",
+      "sector": "finance"
     }
   },
   "days": {
@@ -531,6 +594,33 @@
         "sent": true,
         "subject": "Progress Log｜每日精进 · Daily Learning Pack｜11/01 晚场"
       }
+    },
+    "2026-11-02": {
+      "morning": {
+        "status": "ok",
+        "generated_at": "2026-11-02 08:32",
+        "english_articles": 3,
+        "english_minutes": 60,
+        "sector_minutes": 90,
+        "english_title": "# 01｜Ethiopian PM puts ministers through military training",
+        "lead_title": "",
+        "sectors": [
+          {
+            "key": "consumer",
+            "title": "# 联合利华三季度家居护理增长9.1%，中国市场的社交电商为什么成了关键变量",
+            "minutes": 40
+          },
+          {
+            "key": "finance",
+            "title": "# 证监会细化\"行政执法当事人承诺\"规则：被查公司交钱换终止调查，投资者怎么拿到赔偿",
+            "minutes": 50
+          }
+        ],
+        "pack_url": "packs/2026-11-02-morning.html",
+        "cost": "calls=3 tokens=12633+9446",
+        "sent": true,
+        "subject": "Progress Log｜每日精进 · Daily Learning Pack｜11/02 早场"
+      }
     }
   },
   "history": [
@@ -562,6 +652,12 @@
       "key": "2026-11-01#evening",
       "date": "2026-11-01",
       "slot": "evening",
+      "status": "ok"
+    },
+    {
+      "key": "2026-11-02#morning",
+      "date": "2026-11-02",
+      "slot": "morning",
       "status": "ok"
     }
   ]
