@@ -609,6 +609,90 @@
       "date": "2026-11-03",
       "slot": "morning",
       "sector": "finance"
+    },
+    "f41ba607bb76e1f6": {
+      "title": "UK and EU agree draft deal to scrap Brexit red tape over food exports",
+      "source": "BBC Business",
+      "date": "2026-11-03",
+      "slot": "evening",
+      "sector": "english"
+    },
+    "5cac0f36198e3820": {
+      "title": "Proposal for free bus service scrapped",
+      "source": "BBC Business",
+      "date": "2026-11-03",
+      "slot": "evening",
+      "sector": "english"
+    },
+    "9805f7e114d65685": {
+      "title": "Drivers may get compensation offers before car finance saga ends",
+      "source": "BBC Business",
+      "date": "2026-11-03",
+      "slot": "evening",
+      "sector": "english"
+    },
+    "074840058563a501": {
+      "title": "上海金山科普研学线路解锁乡村文旅新体验",
+      "source": "品橙旅游",
+      "date": "2026-11-03",
+      "slot": "evening",
+      "sector": "travel"
+    },
+    "1311881752ee52cf": {
+      "title": "年接待游客超600万人次 九寨沟守护山水魅力",
+      "source": "品橙旅游",
+      "date": "2026-11-03",
+      "slot": "evening",
+      "sector": "travel"
+    },
+    "fa0bb5786b256276": {
+      "title": "山西太原推出秋假研学主题旅游线路",
+      "source": "品橙旅游",
+      "date": "2026-11-03",
+      "slot": "evening",
+      "sector": "travel"
+    },
+    "c043130d47cb06ee": {
+      "title": "Crocs集团上季度营收同比增长4.6%至10.43亿美元，国际市场实现双位数增长",
+      "source": "华丽志",
+      "date": "2026-11-03",
+      "slot": "evening",
+      "sector": "consumer"
+    },
+    "57e41fdbc3a7a548": {
+      "title": "Interbrand 2026全球百强品牌榜：爱马仕、法拉利、优衣库、乐高、ZARA 品牌价值增幅超10%",
+      "source": "华丽志",
+      "date": "2026-11-03",
+      "slot": "evening",
+      "sector": "consumer"
+    },
+    "64654f64b7ff19bf": {
+      "title": "澳大利亚设计师品牌 Zimmermann 扭亏为盈，上财年营收增长14%至7.4亿澳元",
+      "source": "华丽志",
+      "date": "2026-11-03",
+      "slot": "evening",
+      "sector": "consumer"
+    },
+    "97c34b621cfeebfa": {
+      "title": "世贸组织第10届促贸援助全球审议大会在日内瓦召开",
+      "source": "商务部",
+      "date": "2026-11-03",
+      "slot": "evening",
+      "sector": "finance"
+    },
+    "502669bae74514c8": {
+      "title": "中国与瑞士签署自贸协定升级议定书",
+      "source": "商务部",
+      "date": "2026-11-03",
+      "slot": "evening",
+      "sector": "finance"
+    },
+    "3d201cc2e73053f4": {
+      "title": "华尔街见闻早餐FM-Radio | 2026年11月3日",
+      "source": "华尔街见闻",
+      "date": "2026-11-03",
+      "slot": "evening",
+      "sector": "finance"
     }
   },
   "days": {
@@ -850,6 +934,36 @@
         "cost": "calls=4 tokens=13671+11871",
         "sent": true,
         "subject": "Progress Log｜每日精进 · Daily Learning Pack｜11/03 早场"
+      },
+      "evening": {
+        "status": "ok",
+        "generated_at": "2026-11-03 20:47",
+        "english_articles": 3,
+        "english_minutes": 60,
+        "sector_minutes": 90,
+        "english_title": "# 01｜UK and EU agree draft deal to scrap Brexit red tape over food exports",
+        "lead_title": "# 九寨沟年接待破600万人次、上海金山与太原同推研学线路：景区、乡村、城市如何各做各的“内容生意”",
+        "sectors": [
+          {
+            "key": "travel",
+            "title": "# 九寨沟年接待破600万人次、上海金山与太原同推研学线路：景区、乡村、城市如何各做各的“内容生意”",
+            "minutes": 35
+          },
+          {
+            "key": "consumer",
+            "title": "# Crocs 三季度营收 10.43 亿美元：一双洞洞鞋如何靠“多款式＋多场景”续增长",
+            "minutes": 25
+          },
+          {
+            "key": "finance",
+            "title": "# 中瑞自贸协定升级、央行千亿“互换便利”操作：两件事背后，钱在往哪走",
+            "minutes": 30
+          }
+        ],
+        "pack_url": "packs/2026-11-03-evening.html",
+        "cost": "calls=4 tokens=11029+13966",
+        "sent": true,
+        "subject": "Progress Log｜每日精进 · Daily Learning Pack｜11/03 晚场"
       }
     }
   },
@@ -900,6 +1014,12 @@
       "key": "2026-11-03#morning",
       "date": "2026-11-03",
       "slot": "morning",
+      "status": "ok"
+    },
+    {
+      "key": "2026-11-03#evening",
+      "date": "2026-11-03",
+      "slot": "evening",
       "status": "ok"
     }
   ]
