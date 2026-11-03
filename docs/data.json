@@ -3,18 +3,18 @@
     "week": "2026-W45",
     "week_start": "2026-11-02",
     "week_end": "2026-11-08",
-    "english_count": 6,
-    "english_minutes": 120,
-    "sector_count": 5,
-    "sector_minutes": 180,
-    "total_minutes": 300,
-    "slots_done": 2,
+    "english_count": 9,
+    "english_minutes": 180,
+    "sector_count": 8,
+    "sector_minutes": 270,
+    "total_minutes": 450,
+    "slots_done": 3,
     "slots_planned": 14,
-    "progress": 0.1429,
+    "progress": 0.2143,
     "sectors": {
-      "finance": 2,
-      "travel": 1,
-      "consumer": 2
+      "finance": 3,
+      "travel": 2,
+      "consumer": 3
     },
     "daily": [
       {
@@ -25,8 +25,8 @@
       },
       {
         "date": "2026-11-03",
-        "slots": 0,
-        "morning": false,
+        "slots": 1,
+        "morning": true,
         "evening": false
       },
       {
@@ -64,14 +64,9 @@
   "today": {
     "morning": {
       "done": true,
-      "title": "# 01｜Ethiopian PM puts ministers through military training",
-      "url": "packs/2026-11-02-morning.html"
-    },
-    "evening": {
-      "done": true,
-      "title": "# 01｜Supermarket freezers in Belgium, Sweden and Luxembourg hit by suspected cyber-attack",
-      "url": "packs/2026-11-02-evening.html"
+      "title": "# 01｜Poundland's former owner offers to invest as minister prepares to meet board",
+      "url": "packs/2026-11-03-morning.html"
     }
   },
-  "updated_at": "2026-11-02 20:46"
+  "updated_at": "2026-11-03 08:33"
 }

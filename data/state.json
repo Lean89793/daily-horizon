@@ -525,6 +525,90 @@
       "date": "2026-11-02",
       "slot": "evening",
       "sector": "finance"
+    },
+    "f91e4ee246d5f90b": {
+      "title": "Poundland's former owner offers to invest as minister prepares to meet board",
+      "source": "BBC Business",
+      "date": "2026-11-03",
+      "slot": "morning",
+      "sector": "english"
+    },
+    "6e62b92faaca3e4a": {
+      "title": "EU launches safeguard investigation on certain new hybrid vehicles",
+      "source": "WTO News",
+      "date": "2026-11-03",
+      "slot": "morning",
+      "sector": "english"
+    },
+    "2a4e5918e499d4e7": {
+      "title": "Xi holds talks with Sultan of Oman, stressing bilateral cooperation, peace efforts in Middle East",
+      "source": "Gov.cn English",
+      "date": "2026-11-03",
+      "slot": "morning",
+      "sector": "english"
+    },
+    "1a618cc42132f349": {
+      "title": "阿迪达斯最新季报：全球销售额同比增长9％，大中华区涨20%",
+      "source": "华丽志",
+      "date": "2026-11-03",
+      "slot": "morning",
+      "sector": "consumer"
+    },
+    "becf8d4fa6fa1f69": {
+      "title": "Puma 彪马最新季报：全球营收同比下滑5%，大中华区营收连续三个季度正增长",
+      "source": "华丽志",
+      "date": "2026-11-03",
+      "slot": "morning",
+      "sector": "consumer"
+    },
+    "32733d2205b17f05": {
+      "title": "拜尔斯道夫集团上季度净销售额同比有机下滑1.3%，中国市场推动 La Prairie 增长8.5%",
+      "source": "华丽志",
+      "date": "2026-11-03",
+      "slot": "morning",
+      "sector": "consumer"
+    },
+    "984fcf8a81352f25": {
+      "title": "同程旅行出炉候鸟旅居黑马目的地榜单",
+      "source": "品橙旅游",
+      "date": "2026-11-03",
+      "slot": "morning",
+      "sector": "travel"
+    },
+    "0355dab3b387830f": {
+      "title": "深圳莲塘口岸出入境客流突破一亿人次",
+      "source": "品橙旅游",
+      "date": "2026-11-03",
+      "slot": "morning",
+      "sector": "travel"
+    },
+    "6ed47ab9620a9f72": {
+      "title": "春秋航空第三季度赚了18亿！",
+      "source": "品橙旅游",
+      "date": "2026-11-03",
+      "slot": "morning",
+      "sector": "travel"
+    },
+    "e85611f5df829b3d": {
+      "title": "证监会就《证券期货行政执法当事人承诺金管理办法（征求意见稿）》公开征求意见",
+      "source": "中国证监会",
+      "date": "2026-11-03",
+      "slot": "morning",
+      "sector": "finance"
+    },
+    "ea29045873dbb274": {
+      "title": "证监会组织开展“读懂上市公司报告”投资者教育专项活动",
+      "source": "中国证监会",
+      "date": "2026-11-03",
+      "slot": "morning",
+      "sector": "finance"
+    },
+    "08b8211bbb2c46e6": {
+      "title": "【钛晨报】联手稳市场，三部门最新部署；六大行大额存单全部重启发行；中上协：前三季度境内股票市场上市公司合计实现归母净利润5.1万亿元，同比增长8.5%",
+      "source": "钛媒体",
+      "date": "2026-11-03",
+      "slot": "morning",
+      "sector": "finance"
     }
   },
   "days": {
@@ -735,6 +819,38 @@
         "sent": true,
         "subject": "Progress Log｜每日精进 · Daily Learning Pack｜11/02 晚场"
       }
+    },
+    "2026-11-03": {
+      "morning": {
+        "status": "ok",
+        "generated_at": "2026-11-03 08:33",
+        "english_articles": 3,
+        "english_minutes": 60,
+        "sector_minutes": 90,
+        "english_title": "# 01｜Poundland's former owner offers to invest as minister prepares to meet board",
+        "lead_title": "# 阿迪达斯三季度服饰增长19%、彪马中国连涨三季：运动品牌的“衣服生意”为何成了胜负手",
+        "sectors": [
+          {
+            "key": "consumer",
+            "title": "# 阿迪达斯三季度服饰增长19%、彪马中国连涨三季：运动品牌的“衣服生意”为何成了胜负手",
+            "minutes": 35
+          },
+          {
+            "key": "travel",
+            "title": "# 候鸟旅居提前南迁：同程数据显示小城订单占比超三成，春秋航空前三季营收增15%却少赚两成",
+            "minutes": 25
+          },
+          {
+            "key": "finance",
+            "title": "# 证监会把“和解金”改叫“承诺金”：这笔钱怎么收、怎么赔、谁在看",
+            "minutes": 30
+          }
+        ],
+        "pack_url": "packs/2026-11-03-morning.html",
+        "cost": "calls=4 tokens=13671+11871",
+        "sent": true,
+        "subject": "Progress Log｜每日精进 · Daily Learning Pack｜11/03 早场"
+      }
     }
   },
   "history": [
@@ -778,6 +894,12 @@
       "key": "2026-11-02#evening",
       "date": "2026-11-02",
       "slot": "evening",
+      "status": "ok"
+    },
+    {
+      "key": "2026-11-03#morning",
+      "date": "2026-11-03",
+      "slot": "morning",
       "status": "ok"
     }
   ]
