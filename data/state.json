@@ -693,6 +693,90 @@
       "date": "2026-11-03",
       "slot": "evening",
       "sector": "finance"
+    },
+    "c3dfe9a0f375d9d1": {
+      "title": "What's happening to UK interest rates and what does it mean for mortgages?",
+      "source": "BBC Business",
+      "date": "2026-11-04",
+      "slot": "morning",
+      "sector": "english"
+    },
+    "b1d5c70923ec7850": {
+      "title": "'Quiet quitting' could be hitting the economy - here's why",
+      "source": "BBC Business",
+      "date": "2026-11-04",
+      "slot": "morning",
+      "sector": "english"
+    },
+    "9e642291d7bcc949": {
+      "title": "North Korea denies being behind record $6.3bn Binance hack",
+      "source": "BBC Business",
+      "date": "2026-11-04",
+      "slot": "morning",
+      "sector": "english"
+    },
+    "98fe50529b5cb369": {
+      "title": "2026旅游产业高质量发展主题活动在烟台举办",
+      "source": "品橙旅游",
+      "date": "2026-11-04",
+      "slot": "morning",
+      "sector": "travel"
+    },
+    "e634218cec679046": {
+      "title": "走访山西新绛非遗小院集群:一院一非遗 院院亮手艺",
+      "source": "品橙旅游",
+      "date": "2026-11-04",
+      "slot": "morning",
+      "sector": "travel"
+    },
+    "87c016f4c9971b37": {
+      "title": "“音乐转转场”转出小城文旅热",
+      "source": "品橙旅游",
+      "date": "2026-11-04",
+      "slot": "morning",
+      "sector": "travel"
+    },
+    "f2e81681f36be755": {
+      "title": "雅诗兰黛集团最新季报：香水净销售额同比增长20%，中国大陆有机增长9%",
+      "source": "华丽志",
+      "date": "2026-11-04",
+      "slot": "morning",
+      "sector": "consumer"
+    },
+    "e3362a08e42a3dcc": {
+      "title": "人事动向｜拉夫劳伦首席品牌传播官、Bergdorf Goodman总裁、路易威登、赫斯特集团等高管任命",
+      "source": "华丽志",
+      "date": "2026-11-04",
+      "slot": "morning",
+      "sector": "consumer"
+    },
+    "be76e6bb3c6f0581": {
+      "title": "华泰证券：智能戒指仍处品牌与场景验证阶段，尚未进入供应链全面放量期",
+      "source": "界面新闻",
+      "date": "2026-11-04",
+      "slot": "morning",
+      "sector": "consumer"
+    },
+    "92ace802351bb197": {
+      "title": "亚太经合组织召开第37届外交和贸易双部长会议",
+      "source": "商务部",
+      "date": "2026-11-04",
+      "slot": "morning",
+      "sector": "finance"
+    },
+    "c5dd627e3f76901b": {
+      "title": "中国—希腊经贸混委会第十五次会议在浙江宁波召开",
+      "source": "商务部",
+      "date": "2026-11-04",
+      "slot": "morning",
+      "sector": "finance"
+    },
+    "921003fc26c07f39": {
+      "title": "华尔街见闻早餐FM-Radio | 2026年11月4日",
+      "source": "华尔街见闻",
+      "date": "2026-11-04",
+      "slot": "morning",
+      "sector": "finance"
     }
   },
   "days": {
@@ -965,6 +1049,38 @@
         "sent": true,
         "subject": "Progress Log｜每日精进 · Daily Learning Pack｜11/03 晚场"
       }
+    },
+    "2026-11-04": {
+      "morning": {
+        "status": "ok",
+        "generated_at": "2026-11-04 08:32",
+        "english_articles": 3,
+        "english_minutes": 60,
+        "sector_minutes": 90,
+        "english_title": "# 01｜What's happening to UK interest rates and what does it mean for mortgages?",
+        "lead_title": "# 烟台开了一场会，把“十五五”旅游的钱和难题都摆上了桌",
+        "sectors": [
+          {
+            "key": "travel",
+            "title": "# 烟台开了一场会，把“十五五”旅游的钱和难题都摆上了桌",
+            "minutes": 35
+          },
+          {
+            "key": "consumer",
+            "title": "# 雅诗兰黛中国份额连涨七季：香水双位数增长，折扣退场换品牌吸引力",
+            "minutes": 25
+          },
+          {
+            "key": "finance",
+            "title": "# 央行上调外汇存款准备金率至6%：人民币偏强时，央行给外汇流动性“加锁”",
+            "minutes": 30
+          }
+        ],
+        "pack_url": "packs/2026-11-04-morning.html",
+        "cost": "calls=4 tokens=13804+12509",
+        "sent": true,
+        "subject": "Progress Log｜每日精进 · Daily Learning Pack｜11/04 早场"
+      }
     }
   },
   "history": [
@@ -1020,6 +1136,12 @@
       "key": "2026-11-03#evening",
       "date": "2026-11-03",
       "slot": "evening",
+      "status": "ok"
+    },
+    {
+      "key": "2026-11-04#morning",
+      "date": "2026-11-04",
+      "slot": "morning",
       "status": "ok"
     }
   ]

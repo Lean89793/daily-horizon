@@ -3,18 +3,18 @@
     "week": "2026-W45",
     "week_start": "2026-11-02",
     "week_end": "2026-11-08",
-    "english_count": 12,
-    "english_minutes": 240,
-    "sector_count": 11,
-    "sector_minutes": 360,
-    "total_minutes": 600,
-    "slots_done": 4,
+    "english_count": 15,
+    "english_minutes": 300,
+    "sector_count": 14,
+    "sector_minutes": 450,
+    "total_minutes": 750,
+    "slots_done": 5,
     "slots_planned": 14,
-    "progress": 0.2857,
+    "progress": 0.3571,
     "sectors": {
-      "finance": 4,
-      "travel": 3,
-      "consumer": 4
+      "finance": 5,
+      "travel": 4,
+      "consumer": 5
     },
     "daily": [
       {
@@ -31,8 +31,8 @@
       },
       {
         "date": "2026-11-04",
-        "slots": 0,
-        "morning": false,
+        "slots": 1,
+        "morning": true,
         "evening": false
       },
       {
@@ -64,14 +64,9 @@
   "today": {
     "morning": {
       "done": true,
-      "title": "# 01｜Poundland's former owner offers to invest as minister prepares to meet board",
-      "url": "packs/2026-11-03-morning.html"
-    },
-    "evening": {
-      "done": true,
-      "title": "# 01｜UK and EU agree draft deal to scrap Brexit red tape over food exports",
-      "url": "packs/2026-11-03-evening.html"
+      "title": "# 01｜What's happening to UK interest rates and what does it mean for mortgages?",
+      "url": "packs/2026-11-04-morning.html"
     }
   },
-  "updated_at": "2026-11-03 20:47"
+  "updated_at": "2026-11-04 08:32"
 }
