@@ -3,18 +3,18 @@
     "week": "2026-W45",
     "week_start": "2026-11-02",
     "week_end": "2026-11-08",
-    "english_count": 15,
-    "english_minutes": 300,
-    "sector_count": 14,
-    "sector_minutes": 450,
-    "total_minutes": 750,
-    "slots_done": 5,
+    "english_count": 17,
+    "english_minutes": 360,
+    "sector_count": 17,
+    "sector_minutes": 540,
+    "total_minutes": 900,
+    "slots_done": 6,
     "slots_planned": 14,
-    "progress": 0.3571,
+    "progress": 0.4286,
     "sectors": {
-      "finance": 5,
-      "travel": 4,
-      "consumer": 5
+      "finance": 6,
+      "travel": 5,
+      "consumer": 6
     },
     "daily": [
       {
@@ -31,9 +31,9 @@
       },
       {
         "date": "2026-11-04",
-        "slots": 1,
+        "slots": 2,
         "morning": true,
-        "evening": false
+        "evening": true
       },
       {
         "date": "2026-11-05",
@@ -66,7 +66,12 @@
       "done": true,
       "title": "# 01｜What's happening to UK interest rates and what does it mean for mortgages?",
       "url": "packs/2026-11-04-morning.html"
+    },
+    "evening": {
+      "done": true,
+      "title": "# 01｜Poundland owner in crunch talks with business secretary as retailer's collapse looms",
+      "url": "packs/2026-11-04-evening.html"
     }
   },
-  "updated_at": "2026-11-04 08:32"
+  "updated_at": "2026-11-04 20:43"
 }

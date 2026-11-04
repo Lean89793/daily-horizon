@@ -777,6 +777,83 @@
       "date": "2026-11-04",
       "slot": "morning",
       "sector": "finance"
+    },
+    "49982d8f149db212": {
+      "title": "Poundland owner in crunch talks with business secretary as retailer's collapse looms",
+      "source": "BBC Business",
+      "date": "2026-11-04",
+      "slot": "evening",
+      "sector": "english"
+    },
+    "0e2976d27e3d42af": {
+      "title": "Swim and gym prices set to rise above inflation",
+      "source": "BBC Business",
+      "date": "2026-11-04",
+      "slot": "evening",
+      "sector": "english"
+    },
+    "6d1c5c3dc3ae46c3": {
+      "title": "香港9月份珠宝钟表及名贵礼物的销货价值同比上升20.3%，零售业总体连续第17个月录得增长",
+      "source": "华丽志",
+      "date": "2026-11-04",
+      "slot": "evening",
+      "sector": "consumer"
+    },
+    "1e557f9c67ae1a67": {
+      "title": "第140届广交会闭幕，到会人数创历史新高",
+      "source": "界面新闻",
+      "date": "2026-11-04",
+      "slot": "evening",
+      "sector": "consumer"
+    },
+    "91f5f7d46b33e1cb": {
+      "title": "机构：供需博弈趋于均衡，11月电视面板价格有望维持平稳",
+      "source": "界面新闻",
+      "date": "2026-11-04",
+      "slot": "evening",
+      "sector": "consumer"
+    },
+    "9274f7358b747f90": {
+      "title": "富国岛柏悦酒店将于2026年12月盛大启幕",
+      "source": "品橙旅游",
+      "date": "2026-11-04",
+      "slot": "evening",
+      "sector": "travel"
+    },
+    "a59773af94310788": {
+      "title": "中国旅游景区协会景区安全应急专业委员会成立",
+      "source": "品橙旅游",
+      "date": "2026-11-04",
+      "slot": "evening",
+      "sector": "travel"
+    },
+    "902858cd0cc66b01": {
+      "title": "泰国制定第四个国家旅游发展计划 提高总收入",
+      "source": "品橙旅游",
+      "date": "2026-11-04",
+      "slot": "evening",
+      "sector": "travel"
+    },
+    "980a944df2418b9a": {
+      "title": "2026年10月下旬流通领域重要生产资料市场价格变动情况",
+      "source": "国家统计局",
+      "date": "2026-11-04",
+      "slot": "evening",
+      "sector": "finance"
+    },
+    "4c9838b305c256a3": {
+      "title": "中国人民银行加力实施股票回购增持再贷款政策",
+      "source": "中国人民银行",
+      "date": "2026-11-04",
+      "slot": "evening",
+      "sector": "finance"
+    },
+    "0b9acb26b924a4b3": {
+      "title": "民主党横扫国会后，投资者最关注的12个问题",
+      "source": "华尔街见闻",
+      "date": "2026-11-04",
+      "slot": "evening",
+      "sector": "finance"
     }
   },
   "days": {
@@ -1080,6 +1157,36 @@
         "cost": "calls=4 tokens=13804+12509",
         "sent": true,
         "subject": "Progress Log｜每日精进 · Daily Learning Pack｜11/04 早场"
+      },
+      "evening": {
+        "status": "ok",
+        "generated_at": "2026-11-04 20:43",
+        "english_articles": 2,
+        "english_minutes": 60,
+        "sector_minutes": 90,
+        "english_title": "# 01｜Poundland owner in crunch talks with business secretary as retailer's collapse looms",
+        "lead_title": "# 香港9月零售连涨17个月、广交会境外采购商创历史新高：从两个\"热度\"看中国消费品出海与内销的真实体温",
+        "sectors": [
+          {
+            "key": "consumer",
+            "title": "# 香港9月零售连涨17个月、广交会境外采购商创历史新高：从两个\"热度\"看中国消费品出海与内销的真实体温",
+            "minutes": 35
+          },
+          {
+            "key": "travel",
+            "title": "# 越南富国岛迎来柏悦度假村、中国景区安全应急专委会成立、泰国筹划第四个国家旅游发展计划：旅游产业链上中下游在补什么课",
+            "minutes": 25
+          },
+          {
+            "key": "finance",
+            "title": "# 央行把“回购增持再贷款”利率降到1%，加上美国中期选举变天：两件事怎么连起来看",
+            "minutes": 30
+          }
+        ],
+        "pack_url": "packs/2026-11-04-evening.html",
+        "cost": "calls=4 tokens=8131+11568",
+        "sent": true,
+        "subject": "Progress Log｜每日精进 · Daily Learning Pack｜11/04 晚场"
       }
     }
   },
@@ -1142,6 +1249,12 @@
       "key": "2026-11-04#morning",
       "date": "2026-11-04",
       "slot": "morning",
+      "status": "ok"
+    },
+    {
+      "key": "2026-11-04#evening",
+      "date": "2026-11-04",
+      "slot": "evening",
       "status": "ok"
     }
   ]
