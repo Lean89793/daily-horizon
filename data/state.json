@@ -854,6 +854,83 @@
       "date": "2026-11-04",
       "slot": "evening",
       "sector": "finance"
+    },
+    "2aee3dd5b4f9912c": {
+      "title": "Interest rates expected to rise for first time in over three years",
+      "source": "BBC Business",
+      "date": "2026-11-05",
+      "slot": "morning",
+      "sector": "english"
+    },
+    "543d5be89f1a181c": {
+      "title": "Poundland owner in crunch talks as retailer's collapse looms",
+      "source": "BBC Business",
+      "date": "2026-11-05",
+      "slot": "morning",
+      "sector": "english"
+    },
+    "21a1b2394b705a1b": {
+      "title": "汽车早报｜比亚迪辟谣天神之眼C停产传闻 丰田、大众等品牌召回汽车超80万辆",
+      "source": "界面新闻",
+      "date": "2026-11-05",
+      "slot": "morning",
+      "sector": "consumer"
+    },
+    "e6087ccf5c1a480e": {
+      "title": "美国健身平台FitLab申请破产保护，将破产归咎于失去耐克合作",
+      "source": "界面新闻",
+      "date": "2026-11-05",
+      "slot": "morning",
+      "sector": "consumer"
+    },
+    "9dc947d507764f2e": {
+      "title": "OpenAI推出Images 2.6，图像生成速度提升50%，新增GIF生成功能",
+      "source": "界面新闻",
+      "date": "2026-11-05",
+      "slot": "morning",
+      "sector": "consumer"
+    },
+    "dfd1d531e4181820": {
+      "title": "Expedia TAAP 深耕中国十周年",
+      "source": "品橙旅游",
+      "date": "2026-11-05",
+      "slot": "morning",
+      "sector": "travel"
+    },
+    "a8117c6afa74635a": {
+      "title": "土耳其2026年前9个月旅游收入达513亿美元",
+      "source": "品橙旅游",
+      "date": "2026-11-05",
+      "slot": "morning",
+      "sector": "travel"
+    },
+    "38d103b226799c41": {
+      "title": "2026年10月重庆“两江游”完成客运量37.8万人",
+      "source": "品橙旅游",
+      "date": "2026-11-05",
+      "slot": "morning",
+      "sector": "travel"
+    },
+    "8bfcab91656d20d1": {
+      "title": "中国共产党第二十届中央委员会第五次全体会议公报",
+      "source": "商务部",
+      "date": "2026-11-05",
+      "slot": "morning",
+      "sector": "finance"
+    },
+    "d6a2fadab60631a9": {
+      "title": "习近平同阿曼苏丹海赛姆会谈",
+      "source": "商务部",
+      "date": "2026-11-05",
+      "slot": "morning",
+      "sector": "finance"
+    },
+    "106adf4a50fe3688": {
+      "title": "随着民主党重掌国会，华尔街的清算迫在眉睫",
+      "source": "华尔街见闻",
+      "date": "2026-11-05",
+      "slot": "morning",
+      "sector": "finance"
     }
   },
   "days": {
@@ -1188,6 +1265,38 @@
         "sent": true,
         "subject": "Progress Log｜每日精进 · Daily Learning Pack｜11/04 晚场"
       }
+    },
+    "2026-11-05": {
+      "morning": {
+        "status": "ok",
+        "generated_at": "2026-11-05 08:39",
+        "english_articles": 2,
+        "english_minutes": 60,
+        "sector_minutes": 90,
+        "english_title": "# 01｜Interest rates expected to rise for first time in over three years",
+        "lead_title": "# 汽车零售十月跌25%、FitLab破产归咎耐克：两桩\"卖不动\"的生意，和一件正在变便宜的工具",
+        "sectors": [
+          {
+            "key": "consumer",
+            "title": "# 汽车零售十月跌25%、FitLab破产归咎耐克：两桩\"卖不动\"的生意，和一件正在变便宜的工具",
+            "minutes": 35
+          },
+          {
+            "key": "travel",
+            "title": "# 中国旅行社的“全球货架”与目的地的“稳定溢价”：从 Expedia TAAP 在华十年、土耳其前九月收入与重庆两江游看旅游产业链的分层逻辑",
+            "minutes": 25
+          },
+          {
+            "key": "finance",
+            "title": "# 美中期选举民主党夺回两院：华尔街监管红利面临清算，钱会往哪走",
+            "minutes": 30
+          }
+        ],
+        "pack_url": "packs/2026-11-05-morning.html",
+        "cost": "calls=4 tokens=11872+10972",
+        "sent": true,
+        "subject": "Progress Log｜每日精进 · Daily Learning Pack｜11/05 早场"
+      }
     }
   },
   "history": [
@@ -1255,6 +1364,12 @@
       "key": "2026-11-04#evening",
       "date": "2026-11-04",
       "slot": "evening",
+      "status": "ok"
+    },
+    {
+      "key": "2026-11-05#morning",
+      "date": "2026-11-05",
+      "slot": "morning",
       "status": "ok"
     }
   ]
