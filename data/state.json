@@ -931,6 +931,83 @@
       "date": "2026-11-05",
       "slot": "morning",
       "sector": "finance"
+    },
+    "e9c97306ba407b92": {
+      "title": "Interest rates hiked to 4% in first increase in over three years",
+      "source": "BBC Business",
+      "date": "2026-11-05",
+      "slot": "evening",
+      "sector": "english"
+    },
+    "87d12188121af8f2": {
+      "title": "Three ways the interest rate rise could affect you",
+      "source": "BBC Business",
+      "date": "2026-11-05",
+      "slot": "evening",
+      "sector": "english"
+    },
+    "3ea88d5b5bbc9c96": {
+      "title": "新疆海南“双向奔赴”，银龄旅居首发团走起！",
+      "source": "品橙旅游",
+      "date": "2026-11-05",
+      "slot": "evening",
+      "sector": "travel"
+    },
+    "3ddfe69ffb3972a6": {
+      "title": "同程商旅:进博会期间 预订热度周环比涨近10倍",
+      "source": "品橙旅游",
+      "date": "2026-11-05",
+      "slot": "evening",
+      "sector": "travel"
+    },
+    "a700c09bec89bac6": {
+      "title": "文化和旅游部:拟确定17家5A级旅游景区的公示",
+      "source": "品橙旅游",
+      "date": "2026-11-05",
+      "slot": "evening",
+      "sector": "travel"
+    },
+    "2b4ad120c8042091": {
+      "title": "一档综艺，四年复利：利郎如何长线释放《披荆斩棘》的“后劲”？",
+      "source": "华丽志",
+      "date": "2026-11-05",
+      "slot": "evening",
+      "sector": "consumer"
+    },
+    "87b3d77722b0de42": {
+      "title": "意大利设计师品牌 N°21 被本土私募基金 Style Capital 收购",
+      "source": "华丽志",
+      "date": "2026-11-05",
+      "slot": "evening",
+      "sector": "consumer"
+    },
+    "f84ca8bd61326076": {
+      "title": "新加坡9月零售销售总额同比增长1.7%",
+      "source": "华丽志",
+      "date": "2026-11-05",
+      "slot": "evening",
+      "sector": "consumer"
+    },
+    "e47fdae35f841358": {
+      "title": "国务院关于金融工作情况的报告——2026年11月3日在十四届全国人民代表大会常...",
+      "source": "中国人民银行",
+      "date": "2026-11-05",
+      "slot": "evening",
+      "sector": "finance"
+    },
+    "fa8e6550d72d9743": {
+      "title": "中国人民银行与印度尼西亚银行举行联合工作机制工作会议",
+      "source": "中国人民银行",
+      "date": "2026-11-05",
+      "slot": "evening",
+      "sector": "finance"
+    },
+    "eaf66fa330252306": {
+      "title": "华尔街见闻早餐FM-Radio | 2026年11月5日",
+      "source": "华尔街见闻",
+      "date": "2026-11-05",
+      "slot": "evening",
+      "sector": "finance"
     }
   },
   "days": {
@@ -1296,6 +1373,36 @@
         "cost": "calls=4 tokens=11872+10972",
         "sent": true,
         "subject": "Progress Log｜每日精进 · Daily Learning Pack｜11/05 早场"
+      },
+      "evening": {
+        "status": "ok",
+        "generated_at": "2026-11-05 20:49",
+        "english_articles": 2,
+        "english_minutes": 60,
+        "sector_minutes": 90,
+        "english_title": "# 01｜Interest rates hiked to 4% in first increase in over three years",
+        "lead_title": "# 银龄旅居首发团南下、进博会商旅订单暴涨、17家景区冲刺5A：旅游产业链的三条线索同时动了",
+        "sectors": [
+          {
+            "key": "travel",
+            "title": "# 银龄旅居首发团南下、进博会商旅订单暴涨、17家景区冲刺5A：旅游产业链的三条线索同时动了",
+            "minutes": 35
+          },
+          {
+            "key": "consumer",
+            "title": "# 利郎把一档综艺穿了四年：男装品牌如何把赞助变成可复用的资产",
+            "minutes": 25
+          },
+          {
+            "key": "finance",
+            "title": "# 国务院向全国人大报告金融工作：适度宽松的货币政策之下，钱流向了哪里、风险又压在哪里",
+            "minutes": 30
+          }
+        ],
+        "pack_url": "packs/2026-11-05-evening.html",
+        "cost": "calls=4 tokens=13006+11364",
+        "sent": true,
+        "subject": "Progress Log｜每日精进 · Daily Learning Pack｜11/05 晚场"
       }
     }
   },
@@ -1370,6 +1477,12 @@
       "key": "2026-11-05#morning",
       "date": "2026-11-05",
       "slot": "morning",
+      "status": "ok"
+    },
+    {
+      "key": "2026-11-05#evening",
+      "date": "2026-11-05",
+      "slot": "evening",
       "status": "ok"
     }
   ]

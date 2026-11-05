@@ -3,18 +3,18 @@
     "week": "2026-W45",
     "week_start": "2026-11-02",
     "week_end": "2026-11-08",
-    "english_count": 19,
-    "english_minutes": 420,
-    "sector_count": 20,
-    "sector_minutes": 630,
-    "total_minutes": 1050,
-    "slots_done": 7,
+    "english_count": 21,
+    "english_minutes": 480,
+    "sector_count": 23,
+    "sector_minutes": 720,
+    "total_minutes": 1200,
+    "slots_done": 8,
     "slots_planned": 14,
-    "progress": 0.5,
+    "progress": 0.5714,
     "sectors": {
-      "finance": 7,
-      "travel": 6,
-      "consumer": 7
+      "finance": 8,
+      "travel": 7,
+      "consumer": 8
     },
     "daily": [
       {
@@ -37,9 +37,9 @@
       },
       {
         "date": "2026-11-05",
-        "slots": 1,
+        "slots": 2,
         "morning": true,
-        "evening": false
+        "evening": true
       },
       {
         "date": "2026-11-06",
@@ -66,7 +66,12 @@
       "done": true,
       "title": "# 01｜Interest rates expected to rise for first time in over three years",
       "url": "packs/2026-11-05-morning.html"
+    },
+    "evening": {
+      "done": true,
+      "title": "# 01｜Interest rates hiked to 4% in first increase in over three years",
+      "url": "packs/2026-11-05-evening.html"
     }
   },
-  "updated_at": "2026-11-05 08:39"
+  "updated_at": "2026-11-05 20:49"
 }
