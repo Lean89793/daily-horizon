@@ -1008,6 +1008,83 @@
       "date": "2026-11-05",
       "slot": "evening",
       "sector": "finance"
+    },
+    "c673809ee6f758a5": {
+      "title": "Major tech stocks plunge as US midterms add to fears of AI slowdown",
+      "source": "BBC Business",
+      "date": "2026-11-06",
+      "slot": "morning",
+      "sector": "english"
+    },
+    "6d5cb9bc2c7da26b": {
+      "title": "The engine parts that 'fight the laws of the universe'",
+      "source": "BBC Business",
+      "date": "2026-11-06",
+      "slot": "morning",
+      "sector": "english"
+    },
+    "25ae81884ec8f91c": {
+      "title": "吉林省出台入境旅游三年行动方案",
+      "source": "品橙旅游",
+      "date": "2026-11-06",
+      "slot": "morning",
+      "sector": "travel"
+    },
+    "bbe642a0795fbef2": {
+      "title": "前沿科技助“沉睡”遗址数字化“永生”",
+      "source": "品橙旅游",
+      "date": "2026-11-06",
+      "slot": "morning",
+      "sector": "travel"
+    },
+    "64142bbdb4cfebc3": {
+      "title": "曲江文旅控股股东640万股过户",
+      "source": "品橙旅游",
+      "date": "2026-11-06",
+      "slot": "morning",
+      "sector": "travel"
+    },
+    "e2b566998dc8a48d": {
+      "title": "汽车早报｜比亚迪与vivo达成深度战略合作 大众中国辟谣气囊召回短信",
+      "source": "界面新闻",
+      "date": "2026-11-06",
+      "slot": "morning",
+      "sector": "consumer"
+    },
+    "8ea5ab20bdac3cd7": {
+      "title": "中信证券：跨境电商受美欧小包关税政策收紧驱动履约模式迭代，关注低估值配置窗口",
+      "source": "界面新闻",
+      "date": "2026-11-06",
+      "slot": "morning",
+      "sector": "consumer"
+    },
+    "20e13d8b0d591907": {
+      "title": "瑞浦兰钧将向凯傲中国体系供应叉车用锂电池电芯、模组",
+      "source": "界面新闻",
+      "date": "2026-11-06",
+      "slot": "morning",
+      "sector": "consumer"
+    },
+    "69944c6d8046d80d": {
+      "title": "第九届虹桥国际经济论坛“香港分论坛”在上海成功举办",
+      "source": "商务部",
+      "date": "2026-11-06",
+      "slot": "morning",
+      "sector": "finance"
+    },
+    "897ac41892de5a9f": {
+      "title": "国家发展改革委举行奋进“十五五”系列新闻发布会 介绍夯实发展支撑有关情况",
+      "source": "国家发展改革委",
+      "date": "2026-11-06",
+      "slot": "morning",
+      "sector": "finance"
+    },
+    "4886907ee762a8c2": {
+      "title": "光大银行的利润拉锯战",
+      "source": "华尔街见闻",
+      "date": "2026-11-06",
+      "slot": "morning",
+      "sector": "finance"
     }
   },
   "days": {
@@ -1404,6 +1481,38 @@
         "sent": true,
         "subject": "Progress Log｜每日精进 · Daily Learning Pack｜11/05 晚场"
       }
+    },
+    "2026-11-06": {
+      "morning": {
+        "status": "ok",
+        "generated_at": "2026-11-06 08:37",
+        "english_articles": 2,
+        "english_minutes": 60,
+        "sector_minutes": 90,
+        "english_title": "# 01｜Major tech stocks plunge as US midterms add to fears of AI slowdown",
+        "lead_title": "# 吉林11部门联合印发入境游三年方案：东北亚客源占六成，前三季度入境人次增39%",
+        "sectors": [
+          {
+            "key": "travel",
+            "title": "# 吉林11部门联合印发入境游三年方案：东北亚客源占六成，前三季度入境人次增39%",
+            "minutes": 35
+          },
+          {
+            "key": "consumer",
+            "title": "# 美欧小包免税终结，跨境电商履约模式换轨：家居餐具出海卖家要算新账",
+            "minutes": 25
+          },
+          {
+            "key": "finance",
+            "title": "# 光大银行三季报的利润拉锯：营收回来了，净利润为什么还在跌",
+            "minutes": 30
+          }
+        ],
+        "pack_url": "packs/2026-11-06-morning.html",
+        "cost": "calls=4 tokens=9409+10881",
+        "sent": true,
+        "subject": "Progress Log｜每日精进 · Daily Learning Pack｜11/06 早场"
+      }
     }
   },
   "history": [
@@ -1483,6 +1592,12 @@
       "key": "2026-11-05#evening",
       "date": "2026-11-05",
       "slot": "evening",
+      "status": "ok"
+    },
+    {
+      "key": "2026-11-06#morning",
+      "date": "2026-11-06",
+      "slot": "morning",
       "status": "ok"
     }
   ]

@@ -3,18 +3,18 @@
     "week": "2026-W45",
     "week_start": "2026-11-02",
     "week_end": "2026-11-08",
-    "english_count": 21,
-    "english_minutes": 480,
-    "sector_count": 23,
-    "sector_minutes": 720,
-    "total_minutes": 1200,
-    "slots_done": 8,
+    "english_count": 23,
+    "english_minutes": 540,
+    "sector_count": 26,
+    "sector_minutes": 810,
+    "total_minutes": 1350,
+    "slots_done": 9,
     "slots_planned": 14,
-    "progress": 0.5714,
+    "progress": 0.6429,
     "sectors": {
-      "finance": 8,
-      "travel": 7,
-      "consumer": 8
+      "finance": 9,
+      "travel": 8,
+      "consumer": 9
     },
     "daily": [
       {
@@ -43,8 +43,8 @@
       },
       {
         "date": "2026-11-06",
-        "slots": 0,
-        "morning": false,
+        "slots": 1,
+        "morning": true,
         "evening": false
       },
       {
@@ -64,14 +64,9 @@
   "today": {
     "morning": {
       "done": true,
-      "title": "# 01｜Interest rates expected to rise for first time in over three years",
-      "url": "packs/2026-11-05-morning.html"
-    },
-    "evening": {
-      "done": true,
-      "title": "# 01｜Interest rates hiked to 4% in first increase in over three years",
-      "url": "packs/2026-11-05-evening.html"
+      "title": "# 01｜Major tech stocks plunge as US midterms add to fears of AI slowdown",
+      "url": "packs/2026-11-06-morning.html"
     }
   },
-  "updated_at": "2026-11-05 20:49"
+  "updated_at": "2026-11-06 08:37"
 }
