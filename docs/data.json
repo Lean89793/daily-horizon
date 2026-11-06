@@ -3,18 +3,18 @@
     "week": "2026-W45",
     "week_start": "2026-11-02",
     "week_end": "2026-11-08",
-    "english_count": 23,
-    "english_minutes": 540,
-    "sector_count": 26,
-    "sector_minutes": 810,
-    "total_minutes": 1350,
-    "slots_done": 9,
+    "english_count": 25,
+    "english_minutes": 600,
+    "sector_count": 29,
+    "sector_minutes": 900,
+    "total_minutes": 1500,
+    "slots_done": 10,
     "slots_planned": 14,
-    "progress": 0.6429,
+    "progress": 0.7143,
     "sectors": {
-      "finance": 9,
-      "travel": 8,
-      "consumer": 9
+      "finance": 10,
+      "travel": 9,
+      "consumer": 10
     },
     "daily": [
       {
@@ -43,9 +43,9 @@
       },
       {
         "date": "2026-11-06",
-        "slots": 1,
+        "slots": 2,
         "morning": true,
-        "evening": false
+        "evening": true
       },
       {
         "date": "2026-11-07",
@@ -66,7 +66,12 @@
       "done": true,
       "title": "# 01｜Major tech stocks plunge as US midterms add to fears of AI slowdown",
       "url": "packs/2026-11-06-morning.html"
+    },
+    "evening": {
+      "done": true,
+      "title": "# 01｜Global stocks plunge as fears over US AI slowdown spread to Asia and Europe",
+      "url": "packs/2026-11-06-evening.html"
     }
   },
-  "updated_at": "2026-11-06 08:37"
+  "updated_at": "2026-11-06 20:46"
 }

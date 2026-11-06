@@ -1085,6 +1085,83 @@
       "date": "2026-11-06",
       "slot": "morning",
       "sector": "finance"
+    },
+    "a524fd64075aef56": {
+      "title": "Global stocks plunge as fears over US AI slowdown spread to Asia and Europe",
+      "source": "BBC Business",
+      "date": "2026-11-06",
+      "slot": "evening",
+      "sector": "english"
+    },
+    "9a6703b683346c72": {
+      "title": "PM tells firms to publish salaries in job adverts ahead of new law",
+      "source": "BBC Business",
+      "date": "2026-11-06",
+      "slot": "evening",
+      "sector": "english"
+    },
+    "1be3107fbb508773": {
+      "title": "美国重金买矿、全球签协议，谁为这场关键矿产争夺战买单？",
+      "source": "钛媒体",
+      "date": "2026-11-06",
+      "slot": "evening",
+      "sector": "consumer"
+    },
+    "fa22e0e51bdf173a": {
+      "title": "Waymo不想再当“技术供应商”了",
+      "source": "钛媒体",
+      "date": "2026-11-06",
+      "slot": "evening",
+      "sector": "consumer"
+    },
+    "7df058efd5a79dd4": {
+      "title": "欧舒丹集团出售英国奢华护肤品牌 Elemis， 法国私募基金 PAI 接盘",
+      "source": "华丽志",
+      "date": "2026-11-06",
+      "slot": "evening",
+      "sector": "consumer"
+    },
+    "5aff4506ad02457c": {
+      "title": "第九届中国非物质文化遗产博览会在重庆市开幕",
+      "source": "文化和旅游部",
+      "date": "2026-11-06",
+      "slot": "evening",
+      "sector": "travel"
+    },
+    "b47b918560d2ed89": {
+      "title": "秋假带动研学游亲子游火热 多地景区免门票",
+      "source": "品橙旅游",
+      "date": "2026-11-06",
+      "slot": "evening",
+      "sector": "travel"
+    },
+    "c25838b3b2308789": {
+      "title": "上海迪士尼星愿酒店开启预订",
+      "source": "品橙旅游",
+      "date": "2026-11-06",
+      "slot": "evening",
+      "sector": "travel"
+    },
+    "d3dc61cd0683a1db": {
+      "title": "金融监管总局 商务部等7部委联合印发《关于加快航运保险高质量发展的指导意见》",
+      "source": "商务部",
+      "date": "2026-11-06",
+      "slot": "evening",
+      "sector": "finance"
+    },
+    "01fcb1c6ed7b6839": {
+      "title": "中国与加蓬签署结束共同发展经济伙伴关系协定早期收获安排谈判的谅解备忘录",
+      "source": "商务部",
+      "date": "2026-11-06",
+      "slot": "evening",
+      "sector": "finance"
+    },
+    "37a76f04d58bec65": {
+      "title": "创业板跌4%，AI硬件集体调整、“易中天”再度大跌，电力、农业逆势活跃，恒指、恒科指均跌超1%",
+      "source": "华尔街见闻",
+      "date": "2026-11-06",
+      "slot": "evening",
+      "sector": "finance"
     }
   },
   "days": {
@@ -1512,6 +1589,36 @@
         "cost": "calls=4 tokens=9409+10881",
         "sent": true,
         "subject": "Progress Log｜每日精进 · Daily Learning Pack｜11/06 早场"
+      },
+      "evening": {
+        "status": "ok",
+        "generated_at": "2026-11-06 20:46",
+        "english_articles": 2,
+        "english_minutes": 60,
+        "sector_minutes": 90,
+        "english_title": "# 01｜Global stocks plunge as fears over US AI slowdown spread to Asia and Europe",
+        "lead_title": "# 美国用价格保障撬动稀土产能：MP Materials 增产 41% 仍未盈利，谁为本土供应链的价差买单",
+        "sectors": [
+          {
+            "key": "consumer",
+            "title": "# 美国用价格保障撬动稀土产能：MP Materials 增产 41% 仍未盈利，谁为本土供应链的价差买单",
+            "minutes": 35
+          },
+          {
+            "key": "travel",
+            "title": "# 迪士尼开第三座酒店、黄山对18岁以下免票、非遗博览会落地重庆：三件事背后是同一条产业链在转",
+            "minutes": 25
+          },
+          {
+            "key": "finance",
+            "title": "# 七部委联手推航运保险，同一天创业板跌近4%：钱在往哪躲？",
+            "minutes": 30
+          }
+        ],
+        "pack_url": "packs/2026-11-06-evening.html",
+        "cost": "calls=4 tokens=11362+11606",
+        "sent": true,
+        "subject": "Progress Log｜每日精进 · Daily Learning Pack｜11/06 晚场"
       }
     }
   },
@@ -1598,6 +1705,12 @@
       "key": "2026-11-06#morning",
       "date": "2026-11-06",
       "slot": "morning",
+      "status": "ok"
+    },
+    {
+      "key": "2026-11-06#evening",
+      "date": "2026-11-06",
+      "slot": "evening",
       "status": "ok"
     }
   ]
