@@ -1239,6 +1239,76 @@
       "date": "2026-11-07",
       "slot": "morning",
       "sector": "finance"
+    },
+    "1ff221c3aed5d8b0": {
+      "title": "'My mortgage is going up £200': How rising interest rates are hitting people's pockets",
+      "source": "BBC Business",
+      "date": "2026-11-07",
+      "slot": "evening",
+      "sector": "english"
+    },
+    "c5165e22fbe9ead1": {
+      "title": "Faisal Islam: How high will interest rates go?",
+      "source": "BBC Business",
+      "date": "2026-11-07",
+      "slot": "evening",
+      "sector": "english"
+    },
+    "a05adfeaf4b7ab1b": {
+      "title": "斐济旅游局大中华区路演收官",
+      "source": "品橙旅游",
+      "date": "2026-11-07",
+      "slot": "evening",
+      "sector": "travel"
+    },
+    "574f2348d61b1bf9": {
+      "title": "飞猪与澳大利亚塔斯马尼亚旅游局签署合作协议",
+      "source": "品橙旅游",
+      "date": "2026-11-07",
+      "slot": "evening",
+      "sector": "travel"
+    },
+    "e730025e1914825e": {
+      "title": "盘点：17家拟列国家5A景区特色拆解(收藏版)",
+      "source": "品橙旅游",
+      "date": "2026-11-07",
+      "slot": "evening",
+      "sector": "travel"
+    },
+    "6435fe9cf6c142b7": {
+      "title": "2026全国“丝路云品”电商月在上海启动",
+      "source": "商务部",
+      "date": "2026-11-07",
+      "slot": "evening",
+      "sector": "finance"
+    },
+    "b6696d5b7830a57c": {
+      "title": "进博会华丽快报：LVMH、历峰、开云等三大奢侈品集团再度齐聚进博会，带来旗下核心品牌的重磅展品",
+      "source": "华丽志",
+      "date": "2026-11-07",
+      "slot": "evening",
+      "sector": "consumer"
+    },
+    "b738b0d2e3dbb63e": {
+      "title": "首次亮相进博会，美国高端生活方式品牌 WOOLRICH 如何加速深耕中国市场？",
+      "source": "华丽志",
+      "date": "2026-11-07",
+      "slot": "evening",
+      "sector": "consumer"
+    },
+    "32c8859b682d00f2": {
+      "title": "李强主持召开国务院常务会议",
+      "source": "商务部",
+      "date": "2026-11-07",
+      "slot": "evening",
+      "sector": "finance"
+    },
+    "b06d2caba8154786": {
+      "title": "AI资本开支“见顶”，美国经济也随之“见顶”？",
+      "source": "华尔街见闻",
+      "date": "2026-11-07",
+      "slot": "evening",
+      "sector": "finance"
     }
   },
   "days": {
@@ -1728,6 +1798,36 @@
         "cost": "calls=4 tokens=15010+11436",
         "sent": true,
         "subject": "Progress Log｜每日精进 · Daily Learning Pack｜11/07 早场"
+      },
+      "evening": {
+        "status": "ok",
+        "generated_at": "2026-11-07 20:31",
+        "english_articles": 2,
+        "english_minutes": 60,
+        "sector_minutes": 90,
+        "english_title": "# 01｜'My mortgage is going up £200': How rising interest rates are hitting people's pockets",
+        "lead_title": "# 斐济路演签下18家资源方、飞猪直连塔州、17家景区冲刺5A：中国出境游的产业链正在被谁重新组装",
+        "sectors": [
+          {
+            "key": "travel",
+            "title": "# 斐济路演签下18家资源方、飞猪直连塔州、17家景区冲刺5A：中国出境游的产业链正在被谁重新组装",
+            "minutes": 35
+          },
+          {
+            "key": "consumer",
+            "title": "# 进博会上的两条路径：国际品牌如何用“文化叙事”和“品牌重塑”打开中国市场",
+            "minutes": 25
+          },
+          {
+            "key": "finance",
+            "title": "# 国务院常务会议部署“财政金融协同促内需”，同时点名稳股市、化解中小金融机构风险",
+            "minutes": 30
+          }
+        ],
+        "pack_url": "packs/2026-11-07-evening.html",
+        "cost": "calls=4 tokens=15748+10482",
+        "sent": true,
+        "subject": "Progress Log｜每日精进 · Daily Learning Pack｜11/07 晚场"
       }
     }
   },
@@ -1826,6 +1926,12 @@
       "key": "2026-11-07#morning",
       "date": "2026-11-07",
       "slot": "morning",
+      "status": "ok"
+    },
+    {
+      "key": "2026-11-07#evening",
+      "date": "2026-11-07",
+      "slot": "evening",
       "status": "ok"
     }
   ]
