@@ -1162,6 +1162,83 @@
       "date": "2026-11-06",
       "slot": "evening",
       "sector": "finance"
+    },
+    "41ec3fc84a404873": {
+      "title": "AI stocks climb after trillions wiped from market values",
+      "source": "BBC Business",
+      "date": "2026-11-07",
+      "slot": "morning",
+      "sector": "english"
+    },
+    "7045c16c580a22fa": {
+      "title": "Why the US midterms sparked an AI stock selloff",
+      "source": "BBC Business",
+      "date": "2026-11-07",
+      "slot": "morning",
+      "sector": "english"
+    },
+    "a2db0059fe1927d0": {
+      "title": "Ralph Lauren 最新季报：中国营收同比增长超35%，继续领跑全球",
+      "source": "华丽志",
+      "date": "2026-11-07",
+      "slot": "morning",
+      "sector": "consumer"
+    },
+    "c5b5348cb0359b6b": {
+      "title": "丹麦珠宝品牌 Pandora 上季度营收同比有机增长6%，越南工厂正式投产",
+      "source": "华丽志",
+      "date": "2026-11-07",
+      "slot": "morning",
+      "sector": "consumer"
+    },
+    "7a8095ddeb8e3403": {
+      "title": "重磅官宣！Qeelin 麒麟推出全新品牌 Qeelin GOLD",
+      "source": "华丽志",
+      "date": "2026-11-07",
+      "slot": "morning",
+      "sector": "consumer"
+    },
+    "11fdc19eb0d1a8f2": {
+      "title": "Airbnb爱彼迎发布2026年第三季度财务业绩",
+      "source": "品橙旅游",
+      "date": "2026-11-07",
+      "slot": "morning",
+      "sector": "travel"
+    },
+    "448abdcd59a52f02": {
+      "title": "甘肃省文旅厅依托空间智能打造专属“伴游助手”",
+      "source": "品橙旅游",
+      "date": "2026-11-07",
+      "slot": "morning",
+      "sector": "travel"
+    },
+    "a030a83943e0ecb2": {
+      "title": "第九届中国非物质文化遗产博览会在重庆举办",
+      "source": "品橙旅游",
+      "date": "2026-11-07",
+      "slot": "morning",
+      "sector": "travel"
+    },
+    "adf86c372b2eb4c3": {
+      "title": "习近平：关于《中共中央关于持之以恒推进全面从严治党若干重大问题的决定》的说明",
+      "source": "商务部",
+      "date": "2026-11-07",
+      "slot": "morning",
+      "sector": "finance"
+    },
+    "720e263ad3e8f6ab": {
+      "title": "中国—秘鲁自贸协定升级议定书正式生效",
+      "source": "商务部",
+      "date": "2026-11-07",
+      "slot": "morning",
+      "sector": "finance"
+    },
+    "5f1f5329b103c730": {
+      "title": "华尔街见闻早餐FM-Radio | 2026年11月7日",
+      "source": "华尔街见闻",
+      "date": "2026-11-07",
+      "slot": "morning",
+      "sector": "finance"
     }
   },
   "days": {
@@ -1620,6 +1697,38 @@
         "sent": true,
         "subject": "Progress Log｜每日精进 · Daily Learning Pack｜11/06 晚场"
       }
+    },
+    "2026-11-07": {
+      "morning": {
+        "status": "ok",
+        "generated_at": "2026-11-07 08:33",
+        "english_articles": 2,
+        "english_minutes": 60,
+        "sector_minutes": 90,
+        "english_title": "# 01｜AI stocks climb after trillions wiped from market values",
+        "lead_title": "# Ralph Lauren 中国营收增超35%、Pandora 越南工厂投产：两门“慢生意”在同一个季度加速",
+        "sectors": [
+          {
+            "key": "consumer",
+            "title": "# Ralph Lauren 中国营收增超35%、Pandora 越南工厂投产：两门“慢生意”在同一个季度加速",
+            "minutes": 35
+          },
+          {
+            "key": "travel",
+            "title": "# 爱彼迎三季度营收加速至19%、甘肃上线AI伴游助手：平台与目的地正在争夺“行程决策权”",
+            "minutes": 25
+          },
+          {
+            "key": "finance",
+            "title": "# 中秘自贸协定升级生效、美联储加息预期升温：同一天的两条财经线索怎么读",
+            "minutes": 30
+          }
+        ],
+        "pack_url": "packs/2026-11-07-morning.html",
+        "cost": "calls=4 tokens=15010+11436",
+        "sent": true,
+        "subject": "Progress Log｜每日精进 · Daily Learning Pack｜11/07 早场"
+      }
     }
   },
   "history": [
@@ -1711,6 +1820,12 @@
       "key": "2026-11-06#evening",
       "date": "2026-11-06",
       "slot": "evening",
+      "status": "ok"
+    },
+    {
+      "key": "2026-11-07#morning",
+      "date": "2026-11-07",
+      "slot": "morning",
       "status": "ok"
     }
   ]
